@@ -154,7 +154,6 @@ export default function Footer() {
                     <div className="flex flex-col mt-7 text-base tracking-tight text-gray-50">
                         <div>+1 (613) 3166042</div>
                         <div className="mt-5">ambreeny007@gmail.com</div>
-                        <div className="mt-5">ambreenfatima.com</div>
                     </div>
                 </div>
                 <div className="flex flex-col min-w-[240px] w-[304px]">
@@ -192,7 +191,7 @@ export default function Footer() {
                 className="object-contain mt-6 w-full aspect-[200] stroke-[2px] stroke-slate-600 max-md:max-w-full"
             />
             <div className="mt-6 w-full text-base text-center font-light text-sm text-white max-md:max-w-full">
-                Copyright© 2024 AmbreenFatima. All Rights Reserved.
+                Copyright© 2024 Ambreen. All Rights Reserved.
             </div>
         </div>)
 }

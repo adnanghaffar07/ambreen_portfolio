@@ -17,7 +17,7 @@ export async function POST(request: Request) {
 
     const mailOptions = {
       from: process.env.GMAIL_USER,
-      to: "ayesha@codeautomation.dev", // Add your recipient email here
+      to: "ambreeny007@gmail.com", // Add your recipient email here
       subject: "Ambreen - Lead Automation QA Engineer",
       html: `
         <h2>Let's Discuss Idea</h2>

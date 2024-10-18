@@ -9,7 +9,6 @@ const Homepage = () => {
     return (
         <div className="flex flex-col">
             <div className="flex flex-col w-full max-md:max-w-full">
-
                 {/* HERO SECTION */}
                 <div id='home' className="px-6 flex flex-col lg:flex-row relative gap-10 justify-center w-full min-h-[846px] text-[#171717] mx-auto items-center max-w-[1500px]">
                     <div className="flex absolute z-0 flex-col items-center text-center min-w-[240px] top-[37px] max-w-5xl mx-auto max-md:relative max-md:top-auto max-md:my-5">
@@ -97,12 +96,8 @@ const Homepage = () => {
                         </div>
                     </div>
                 </div>
-
-
                 {/* Professional Experience SEction */}
                 <ProfessionalExperience />
-
-
                 {/* Work Experience */}
                 <div id='work' className="flex flex-col items-center px-16 py-16 w-full max-md:px-5 max-md:max-w-full">
                     <div className="text-6xl tracking-tighter leading-none text-[#171717] max-md:max-w-full max-md:text-4xl">
@@ -161,14 +156,10 @@ const Homepage = () => {
                         </div>
                     </div>
                 </div>
-
-
                 {/* Recent Projects */}
                 <RecentProjects />
-
                 {/* Tools and Technologies */}
                 <ToolsAndTechnologies />
-
                 {/* Why HIRE ME */}
                 <div id='hire' className="flex overflow-hidden flex-col justify-center items-center py-14 pr-16 w-full bg-gray-100 min-h-[703px] rounded-[50px] max-md:px-5 max-md:max-w-full">
                     <div className="flex flex-col md:flex-row relative justify-between items-start max-w-full min-h-[600px] w-full md:w-[1299px]">
@@ -223,20 +214,12 @@ const Homepage = () => {
                                 key="Get-Started-Now-button"
                             />
                         </div>
-
                     </div>
                 </div>
-
-
-
                 {/* Contact Section */}
                 <ProjectDiscussionForm />
-
             </div>
-
         </div >
-
-    )
-}
+    )}
 
 export default Homepage
