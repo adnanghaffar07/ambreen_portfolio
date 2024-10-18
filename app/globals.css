@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  letter-spacing: 0.25px;
+  word-spacing: 0.25px;
+  font-family: "Afacad Flux", sans-serif;
+  font-optical-sizing: auto;
+  
+}
+
+.font-righteous {
+  font-family: 'Righteous', cursive;
+}
+
+
+input:focus,
+textarea:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: none;
+}
+
+/* Optional: Add a more subtle focus effect */
+input:focus,
+textarea:focus {
+  border: none;
+  box-shadow: none;
+}
+
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
