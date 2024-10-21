@@ -2,11 +2,12 @@ import React from 'react'
 import ProfessionalExperience from '../components/pagination'
 import ToolsAndTechnologies from '../components/tools'
 import RecentProjects from '../components/recentProjects'
-import ButtonScrollToSection from '../components/buttonScroll';
 import ProjectDiscussionForm from '../components/contactForm';
 import Link from 'next/link';
 
 const Homepage = () => {
+
+    
     return (
         <div className="flex flex-col">
             <div className="flex flex-col w-full max-md:max-w-full">
