@@ -4,6 +4,7 @@ import ToolsAndTechnologies from '../components/tools'
 import RecentProjects from '../components/recentProjects'
 import ButtonScrollToSection from '../components/buttonScroll';
 import ProjectDiscussionForm from '../components/contactForm';
+import Link from 'next/link';
 
 const Homepage = () => {
     return (
@@ -80,13 +81,15 @@ const Homepage = () => {
                                         Download CV
                                     </div>
                                 </a>
+                                <Link
+                                    href="https://calendly.com/ambreeny007"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className='overflow-hidden flex-1 text-center shrink gap-2.5 self-stretch py-2 pr-2.5 pl-2.5 my-auto text-lg md:text-2xl font-light rounded-[60px] cursor-pointer'
+                                >
+                                    Hire me
+                                </Link>
 
-                                <ButtonScrollToSection
-                                    content="Hire me"
-                                    classes="overflow-hidden flex-1 text-center shrink gap-2.5 self-stretch py-2 pr-2.5 pl-2.5 my-auto text-lg md:text-2xl font-light rounded-[60px] cursor-pointer"
-                                    destination="contact"
-                                    key="Get-Started-Now-button"
-                                />
                             </div>
                             <img
                                 src="/arrowup.png"  // Update with the correct path to your arrow image
@@ -207,12 +210,14 @@ const Homepage = () => {
                                     </div>
                                 </div>
                             </div>
-                            <ButtonScrollToSection
-                                content="Hire me"
-                                classes="flex justify-center md:justify-start gap-2.5 md:self-start px-14 py-4 mt-12 text-3xl font-semibold tracking-tight text-white bg-neutral-900 rounded-[24px] max-md:px-5 max-md:mt-10 cursor-pointer"
-                                destination="contact"
-                                key="Get-Started-Now-button"
-                            />
+                            <Link
+                                    href="https://calendly.com/ambreeny007"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className='flex justify-center md:justify-start gap-2.5 md:self-start px-14 py-4 mt-12 text-3xl font-semibold tracking-tight text-white bg-neutral-900 rounded-[24px] max-md:px-5 max-md:mt-10 cursor-pointer'
+                                >
+                                    Hire me
+                                </Link>
                         </div>
                     </div>
                 </div>
@@ -220,6 +225,7 @@ const Homepage = () => {
                 <ProjectDiscussionForm />
             </div>
         </div >
-    )}
+    )
+}
 
 export default Homepage
