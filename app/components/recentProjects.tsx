@@ -33,12 +33,12 @@ const RecentProjects = () => {
                     image: "/qa1.png",
                 },
                 {
-                    name: "QA Automation",
-                    image: "/all2.png",
+                    name: "QA Manual Testing",
+                    image: "/all1.png",
                 },
                 {
-                    name: "QA Automation",
-                    image: "/all3.png",
+                    name: "QA Manual Testing",
+                    image: "/all4.png",
                 },
                 {
                     name: "QA Manual Testing",
@@ -54,17 +54,18 @@ const RecentProjects = () => {
                     image: "/all2.png",
                 },
                 {
-                    name: "QA Automation",
-                    image: "/qa1.png",
-                },
-                {
-                    name: "QA Automation",
-                    image: "/qa2.png",
-                },
-                {
                     name: "QA Manual Testing",
                     image: "/auto1.png",
                 },
+                {
+                    name: "QA Automation",
+                    image: "/all3.png",
+                },
+                {
+                    name: "QA Automation",
+                    image: "/all2.png",
+                },
+             
             ],
         },
     ];
