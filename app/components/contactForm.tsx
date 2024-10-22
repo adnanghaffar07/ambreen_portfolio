@@ -65,7 +65,7 @@ export default function ProjectDiscussionContainer() {
   return (
     <div
       id="contact"
-      className="flex overflow-hidden flex-wrap gap-10 items-center px-20 py-16 w-full max-md:px-5 max-md:max-w-full"
+      className="flex overflow-hidden flex-wrap gap-10 items-center justify-center mx-auto px-20 py-16 w-full max-md:px-5 max-w-7xl"
     >
       <div className="flex flex-col grow shrink self-stretch my-auto min-w-[240px] w-[460px] max-md:max-w-full">
         <div className="text-5xl font-semibold leading-[54px] text-neutral-900 max-w-[600px] max-md:text-4xl">
