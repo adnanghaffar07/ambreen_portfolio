@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 const Homepage = () => {
 
-    
+
     return (
         <div className="flex flex-col">
             <div className="flex flex-col w-full max-md:max-w-full">
@@ -76,7 +76,7 @@ const Homepage = () => {
                                 srcSet="/ambreen.png"
                                 className="object-cover absolute xl:size-full"
                             />
-                            <div className="flex overflow-hidden relative gap-2.5 justify-center items-center px-2.5 py-2 mb-0 max-w-full bg-white bg-opacity-10 min-h-[67px] rounded-[50px] max-w-[351px] max-md:w-full">
+                            <div className="flex overflow-hidden relative gap-2.5 justify-center items-center border border-white px-2.5 py-2 mb-0 max-w-full bg-white bg-opacity-10 min-h-[67px] rounded-[50px] max-w-[351px] max-md:w-full">
                                 <a href="/Ambreen - Lead Automation QA Engineer.pdf" download>
                                     <div className="overflow-hidden self-stretch px-2 py-3.5 text-center my-auto w-44 md:w-52 text-lg font-medium tracking-tight bg-black min-h-[54px] rounded-[60px] cursor-pointer">
                                         Download CV

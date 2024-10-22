@@ -122,7 +122,7 @@ export default function Footer() {
                     </div>
                     <div className="flex flex-col mt-7 text-base tracking-tight text-gray-50">
                         <ButtonScrollToSection
-                            content="Services"
+                            content="My Services"
                             classes=" cursor-pointer"
                             destination="services"
                             key="Get-Started-Now-button"

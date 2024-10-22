@@ -9,19 +9,35 @@ const RecentProjects = () => {
             projects: [
                 {
                     name: "QA Manual Testing",
-                    image: "/all1.png",
+                    image: "/qa2.png",
+                },
+                {
+                    name: "QA Manual Testing",
+                    image: "/all2.png",
                 },
                 {
                     name: "QA Automation",
-                    image: "/all2.png",
+                    image: "/auto1.png",
+                },
+                {
+                    name: "QA Manual Testing",
+                    image: "/qa1.png",
+                },
+                {
+                    name: "QA Manual Testing",
+                    image: "/all1.png",
+                },
+                {
+                    name: "QA Manual Testing",
+                    image: "/all4.png",
                 },
                 {
                     name: "QA Automation",
                     image: "/all3.png",
                 },
                 {
-                    name: "QA Manual Testing",
-                    image: "/all4.png",
+                    name: "QA Automation",
+                    image: "/all2.png",
                 },
             ],
         },
@@ -54,7 +70,7 @@ const RecentProjects = () => {
                     image: "/all2.png",
                 },
                 {
-                    name: "QA Manual Testing",
+                    name: "QA Automation",
                     image: "/auto1.png",
                 },
                 {
@@ -65,25 +81,51 @@ const RecentProjects = () => {
                     name: "QA Automation",
                     image: "/all2.png",
                 },
-             
             ],
         },
     ];
 
     const [activeCategoryIndex, setActiveCategoryIndex] = useState(0); // Set default category as All Projects
+    const [currentPage, setCurrentPage] = useState(1); // Pagination state
+    const itemsPerPage = 4; // Items per page
+
+    // Calculate the number of pages for the current category
+    const totalPages = Math.ceil(categories[activeCategoryIndex].projects.length / itemsPerPage);
+
+    // Get the projects for the current page
+    const startIndex = (currentPage - 1) * itemsPerPage;
+    const paginatedProjects = categories[activeCategoryIndex].projects.slice(startIndex, startIndex + itemsPerPage);
+
+    // Handle Previous button click
+    const handlePrevious = () => {
+        if (currentPage > 1) {
+            setCurrentPage(currentPage - 1);
+        }
+    };
+
+    // Handle Next button click
+    const handleNext = () => {
+        if (currentPage < totalPages) {
+            setCurrentPage(currentPage + 1);
+        }
+    };
 
     return (
         <div id='services' className="flex overflow-hidden flex-col items-center p-16 w-full bg-gray-100 max-md:px-5 max-md:max-w-full">
             <div className="flex flex-col items-center w-full max-w-[1312px] max-md:max-w-full">
-                <div className="text-6xl font-semibold tracking-tighter leading-none text-[#00A5B6] max-md:max-w-full max-md:text-4xl">
-                    <span className="text-[#171717]">My</span> Recent Projects
+                <div className="text-6xl font-semibold tracking-tighter leading-none max-md:max-w-full max-md:text-4xl">
+                    <span className="font-medium">My </span>
+                    <span className="font-semibold text-[#00A5B6]">Recent Projects</span>
                 </div>
                 {/* Tabs for Categories */}
                 <div className="flex overflow-hidden flex-wrap gap-2.5 justify-center items-center px-1.5 py-2 mt-8 text-xl bg-gray-500 bg-opacity-10 min-h-[67px] rounded-[50px] text-neutral-900 max-md:max-w-full">
                     {categories.map((category, index) => (
                         <div
                             key={index}
-                            onClick={() => setActiveCategoryIndex(index)} // Switch categories on click
+                            onClick={() => {
+                                setActiveCategoryIndex(index);
+                                setCurrentPage(1); // Reset to first page when switching category
+                            }}
                             className={`cursor-pointer overflow-hidden px-8 py-3.5 my-auto font-medium tracking-tight rounded-[60px] min-h-[54px] ${activeCategoryIndex === index
                                     ? 'bg-[#00A5B6] text-white' // Active tab styles
                                     : 'bg-transparent text-black' // Inactive tab styles
@@ -95,17 +137,17 @@ const RecentProjects = () => {
                 </div>
             </div>
 
-            {/* Display projects based on the active category */}
+            {/* Display projects based on the active category with pagination */}
             <div className="flex flex-col mt-16 max-w-full text-xl leading-tight text-white w-[1168px] max-md:mt-10">
                 <div className="flex flex-wrap gap-7 items-start w-full">
-                    {categories[activeCategoryIndex].projects.map((project, idx) => (
+                    {paginatedProjects.map((project, idx) => (
                         <div key={idx} className="flex flex-col w-[48%] shrink rounded-sm min-w-[240px] max-md:w-full">
-                            <div className="flex overflow-hidden flex-col w-full rounded-sm border-solid border-[0.834px] border-orange-200 border-opacity-10 max-md:max-w-full">
+                            <div className="flex overflow-hidden flex-col w-full max-md:max-w-full">
                                 <div className="flex relative flex-col w-full max-md:max-w-full">
                                     <img
                                         loading="lazy"
                                         src={project.image}
-                                        className="object-cover"
+                                        className="object-cover rounded-3xl"
                                         alt={project.name}
                                     />
                                 </div>
@@ -113,8 +155,40 @@ const RecentProjects = () => {
                         </div>
                     ))}
                 </div>
-            </div>
 
+                {/* Pagination Controls */}
+                {totalPages > 1 && (
+                    <div className="flex justify-between items-center mt-6">
+                        {/* Previous Button */}
+                        <button
+                            onClick={handlePrevious}
+                            disabled={currentPage === 1}
+                            className={`px-4 py-2 text-sm md:text-lg rounded-md ${currentPage === 1 ? 'bg-gray-300' : 'bg-[#00A5B6] text-white'}`}
+                        >
+                            Previous
+                        </button>
+
+                        {/* Pagination Dots */}
+                        <div className="flex justify-center items-center gap-2">
+                            {[...Array(totalPages)].map((_, idx) => (
+                                <div
+                                    key={idx}
+                                    className={`w-3 h-3 rounded-full ${currentPage - 1 === idx ? 'bg-[#00A5B6]' : 'bg-gray-300'}`}
+                                />
+                            ))}
+                        </div>
+
+                        {/* Next Button */}
+                        <button
+                            onClick={handleNext}
+                            disabled={currentPage === totalPages}
+                            className={`px-4 py-2 text-sm md:text-lg rounded-md ${currentPage === totalPages ? 'bg-gray-300' : 'bg-[#00A5B6] text-white'}`}
+                        >
+                            Next
+                        </button>
+                    </div>
+                )}
+            </div>
         </div>
     );
 };
