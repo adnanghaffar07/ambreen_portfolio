@@ -45,8 +45,6 @@ const ProfessionalExperience = () => {
         }
     ];
 
-
-    
     const [currentIndex, setCurrentIndex] = useState(0);
     const itemsPerPage = 4;
 
