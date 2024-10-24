@@ -43,7 +43,6 @@ const ProfessionalExperience = () => {
             description: "Collaborated with cross-functional teams, including developers, product managers, and UX designers, to ensure all testing requirements were aligned with business objectives.",
             details: "Participated in daily stand-ups, sprint planning, and retrospectives to track progress and resolve issues in a timely manner."
         }
-        
     ];
 
     const [currentIndex, setCurrentIndex] = useState(0);
