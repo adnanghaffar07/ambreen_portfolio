@@ -5,44 +5,45 @@ const ProfessionalExperience = () => {
     const experiences = [
         {
             company: "LighthouseAI",
-            description: "Performed API testing using Postman and RestAssured to ensure seamless integration between various microservices and back-end systems.",
-            details: "Collaborated with developers to debug issues, analyze logs, and troubleshoot API failures.",
+            description: "Led API testing efforts using Postman and RestAssured to validate seamless integration between various microservices and back-end systems.",
+            details: "Collaborated closely with developers to debug issues, analyze logs, and resolve API failures, ensuring system reliability and performance.",
         },
         {
             company: "Pexip",
-            description: "Created comprehensive test plans and test scripts based on functional and technical specifications for manual and automated testing, ensuring that all key features and edge cases were covered in the testing process.",
-            details: "",
+            description: "Developed detailed test plans and scripts based on functional and technical specifications for both manual and automated testing.",
+            details: "Ensured comprehensive coverage of key features and edge cases to deliver high-quality software.",
         },
         {
             company: "Vet Scout",
-            description: "Integrated Jenkins with GitHub to automate the build and testing process, enabling continuous integration and delivery. ",
-            details: "Set up nightly builds and notifications to monitor the health of applications across different environments.",
+            description: "Integrated Jenkins with GitHub to automate build and testing processes, enabling continuous integration and delivery pipelines.",
+            details: "SConfigured nightly builds and set up notifications to continuously monitor the health and stability of applications across multiple environments.",
         },
         {
             company: "Fundthrough",
-            description: "Worked closely with the DevOps team to deploy test environments and manage infrastructure using Docker and Kubernetes.",
-            details: "Assisted in creating and maintaining stable test environments to ensure reliable and consistent test results.",
+            description: "Worked in tandem with the DevOps team to deploy and manage test environments, leveraging Docker and Kubernetes to ensure efficient infrastructure management.",
+            details: "Maintained stable, reliable test environments to produce consistent and accurate test results across the development lifecycle.",
         },
         {
             company: "Make with Tech",
             description: "Developed performance testing scripts using JMeter to simulate real-world user scenarios and identify potential bottlenecks in the application.",
-            details: "Analyzed results and provided actionable insights to the development team for performance optimization.",
+            details: "Analyzed test results and provided actionable insights to the development team for performance optimization."
         },
         {
             company: "Apics",
             description: "Implemented end-to-end automation scripts using Cypress to validate web applications across various browsers.",
-            details: "Integrated Cypress with CI/CD pipelines for automated regression testing and ensured that new features were tested before release.",
+            details: "Integrated Cypress with CI/CD pipelines for automated regression testing and ensured that new features were thoroughly tested before release."
         },
         {
             company: "Hearo",
-            description: "Conducted mobile application testing using Appium, focusing on both Android and iOS platforms. ",
-            details: "Developed test scripts to validate core functionalities, UI elements, and user experience across different mobile devices and OS versions.",
+            description: "Conducted mobile application testing using Appium, focusing on both Android and iOS platforms.",
+            details: "Developed test scripts to validate core functionalities, UI elements, and user experience across different mobile devices and OS versions."
         },
         {
             company: "Site-Source",
             description: "Collaborated with cross-functional teams, including developers, product managers, and UX designers, to ensure all testing requirements were aligned with business objectives.",
-            details: "Participated in daily stand-ups, sprint planning, and retrospectives to track progress and resolve issues in a timely manner.",
-        },
+            details: "Participated in daily stand-ups, sprint planning, and retrospectives to track progress and resolve issues in a timely manner."
+        }
+        
     ];
 
     const [currentIndex, setCurrentIndex] = useState(0);

@@ -44,16 +44,11 @@ const Homepage = () => {
                             className="object-contain w-9 aspect-square max-md:mx-auto"
                         />
                         <div className="mt-3">
-                            Certified cybersecurity professional with 8+ years of experience
-                            in IT, focusing on secure code testing, Apex code testing, and
-                            robust security architecture. Proven expertise in penetration
-                            testing, vulnerability assessment, and collaborating <br />
-                            with clients to deliver cutting-
-                            <br />
-                            edge security solutions.
+                        Over 8 years in software testing and quality assurance, specialize in automating tests, verifying secure code, and optimizing performance. My focus is to ensure that the software is of the highest quality and security before release, contributing to the success of every project I work on.
                             <br />
                         </div>
                     </div>
+                    
 
                     <div className="flex absolute z-0 flex-col items-end leading-none text-center bottom-[275px] right-[100px] text-neutral-900 max-md:relative max-md:bottom-auto max-md:right-auto max-md:items-center max-md:w-full">
                         <img
