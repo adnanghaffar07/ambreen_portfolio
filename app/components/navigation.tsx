@@ -16,7 +16,7 @@ const Navigation = () => {
   return (
     <>
       {/* Navigation Bar */}
-      <div className="flex justify-between lg:justify-center items-center px-2.5 border border-solid backdrop-blur-[7.5px] bg-neutral-900 border-white border-opacity-50 mt-8 md:mt-10 rounded-[50px] max-w-7xl mx-auto">
+      <div className="flex justify-between lg:justify-center items-center px-2.5 border border-solid backdrop-blur-[7.5px] bg-neutral-900 border-white border-opacity-50 mt-8 md:mt-10 rounded-[10px] max-w-7xl mx-auto">
 
         {/* Mobile Logo on the Left */}
         <div className="lg:hidden flex items-center ml-3">
@@ -35,9 +35,7 @@ const Navigation = () => {
                 className="object-contain h-10"
                 alt="Logo"
               />
-              <div className="self-stretch my-auto text-2xl text-white font-righteous">
-                AMBREEN
-              </div>
+             
 
             </div>
           </ScrollLink>
@@ -54,12 +52,12 @@ const Navigation = () => {
               duration={500}
             >
               <div className="overflow-hidden gap-2.5 cursor-pointer self-stretch px-1 xl:px-10  py-5 my-auto rounded-[60px] max-md:px-5">
-                My Services
+               Services
               </div>
             </ScrollLink>
 
             <ScrollLink
-              to="professional" // This should match the id of your tools section
+              to="experience" // This should match the id of your tools section
               spy={true}
               smooth={true}
               offset={-50}
@@ -84,9 +82,7 @@ const Navigation = () => {
                 className="object-contain h-10"
                 alt="Logo"
               />
-              <div className="self-stretch my-auto text-2xl text-white font-righteous">
-                AMBREEN
-              </div>
+            
 
             </div>
           </ScrollLink>
@@ -147,12 +143,12 @@ const Navigation = () => {
                   duration={500}
                   onClick={closeSidebar}
                 >
-                  My Services
+                  Services
                 </ScrollLink></li>
 
               <li >
                 <ScrollLink
-                  to="professional" // This should match the id of your tools section
+                  to="experience" // This should match the id of your tools section
                   spy={true}
                   smooth={true}
                   offset={-50}

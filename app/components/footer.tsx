@@ -1,48 +1,44 @@
-"use client"
-import { useState } from "react";
+
 import ButtonScrollToSection from "./buttonScroll";
 
 export default function Footer() {
-    const [email, setEmail] = useState(""); // Track email input
+    // const [email, setEmail] = useState(""); // Track email input
 
 
-  // Explicitly typing the event as React.FormEvent<HTMLFormElement>
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault(); // Prevent default form submission
+    // Explicitly typing the event as React.FormEvent<HTMLFormElement>
+    // const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    //     e.preventDefault(); // Prevent default form submission
 
-        try {
-            const response = await fetch("/api/projectdiscussionform", {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                },
-                body: JSON.stringify({
-                    email: email,
-                }),
-            });
+    //     try {
+    //         const response = await fetch("/api/projectdiscussionform", {
+    //             method: "POST",
+    //             headers: {
+    //                 "Content-Type": "application/json",
+    //             },
+    //             body: JSON.stringify({
+    //                 email: email,
+    //             }),
+    //         });
 
-            if (response.ok) {
-                alert("Email sent successfully");
-                setEmail(""); // Reset email input field
-            } else {
-                alert("Failed to send email");
-            }
-        } catch (error) {
-            console.error("Error sending email:", error);
-        }
-    };
+    //         if (response.ok) {
+    //             alert("Email sent successfully");
+    //             setEmail(""); // Reset email input field
+    //         } else {
+    //             alert("Failed to send email");
+    //         }
+    //     } catch (error) {
+    //         console.error("Error sending email:", error);
+    //     }
+    // };
     return (
 
 
         <div className="flex overflow-hidden flex-col justify-between px-16 py-6 w-full rounded-tl-3xl rounded-tr-3xl bg-[#171717] min-h-[381px] max-md:px-5 max-md:max-w-full">
-            <img
-                loading="lazy"
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/bf9ddd2687c90f210b59c2cb2077231b3bb05c8c41ba7e52242153313fb26d95?placeholderIfAbsent=true&apiKey=4bbac2e9fd8543319fbc188f9510a76b"
-                className="object-contain mt-6 w-full aspect-[200] stroke-[2px] stroke-slate-600 max-md:max-w-full"
-            />
+            <div className="mt-5" style={{ border: '1px solid rgba(187, 90, 90, 0.5)' }} />
 
-            <div className="flex flex-wrap gap-10 justify-between items-start mt-6 w-full max-md:max-w-full">
-                <div className="flex flex-col items-start min-h-[239px] min-w-[240px] w-[505px] max-md:max-w-full">
+
+            <div className="flex flex-wrap gap-10 justify-start items-start mt-6 w-full max-md:max-w-full">
+                <div className="flex flex-col items-start md:justify-between md:min-h-[239px] md:w-[400px] max-md:max-w-full">
                     <div className="flex overflow-hidden gap-2.5 items-center py-2.5 min-h-[66px] rounded-[60px]">
                         <div className="flex gap-2.5 items-center self-stretch my-auto">
                             <img
@@ -55,12 +51,7 @@ export default function Footer() {
                             </div>
                         </div>
                     </div>
-                    <div className="self-stretch mt-4 text-lg font-tight text-[#FCFCFD] max-md:max-w-full">
-                        Over 9 years of experience in Lead Software Automation Testing, QA
-                        Management, proficient in testing on Mobile, Web, Mangento, CMS,
-                        CRM and Client/Server and Web based applications.
-                    </div>
-                    <div className="flex gap-3 items-start mt-4">
+                    <div className="flex gap-4 items-start mt-4 mb-2">
                         <a
                             href="https://wa.me/+16133166042" // WhatsApp link format
                             target="_blank" // Opens in a new tab
@@ -116,21 +107,21 @@ export default function Footer() {
 
                     </div>
                 </div>
-                <div className="flex flex-col">
-                    <div className="text-xl font-semibold tracking-tight text-[#00A5B6]">
+                <div className="flex flex-col md:mr-16">
+                    <div className="text-xl font-semibold tracking-tight text-[#BB5A5A]">
                         Navigations
                     </div>
                     <div className="flex flex-col mt-7 text-base tracking-tight text-gray-50">
                         <ButtonScrollToSection
-                            content="My Services"
+                            content="Services"
                             classes=" cursor-pointer"
                             destination="services"
                             key="Get-Started-Now-button"
                         />
                         <ButtonScrollToSection
-                            content="Work Experience"
+                            content="Professional Experience"
                             classes=" cursor-pointer mt-5"
-                            destination="work"
+                            destination="experience"
                             key="Get-Started-Now-button"
                         />
                         <ButtonScrollToSection
@@ -147,17 +138,62 @@ export default function Footer() {
                         />
                     </div>
                 </div>
+
                 <div className="flex flex-col">
-                    <div className="text-xl font-semibold tracking-tight text-[#00A5B6]">
+                    <div className="text-xl font-semibold tracking-tight text-[#BB5A5A]">
                         Contact
                     </div>
                     <div className="flex flex-col mt-7 text-base tracking-tight text-gray-50">
-                        <div>+1 (613) 3166042</div>
-                        <div className="mt-5">ambreeny007@gmail.com</div>
+                        <div className="flex items-center gap-3 cursor-pointer">
+                            <a
+                                href="tel:+16133166042" // Telephone link format
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <img
+                                    loading="lazy"
+                                    src="/footer-call.png" // Replace with the actual phone icon path
+                                    className="object-contain w-5 aspect-square"
+                                    alt="Phone"
+                                />
+                            </a>
+                            <span>+1 (613) 3166042</span>
+                        </div>
+                        <div className="flex items-center gap-3 mt-5 cursor-pointer">
+                            <a
+                                href="https://www.ambreeny.com/" // Email link format
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <img
+                                    loading="lazy"
+                                    src="/footer-web.png" // Replace with the actual email icon path
+                                    className="object-contain w-5 aspect-square"
+                                    alt="Email"
+                                />
+                            </a>
+                            <span>ambreeny.com</span>
+                        </div>
+                        <div className="flex items-center gap-3 mt-5 cursor-pointer">
+                            <a
+                                href="mailto:ambreeny007@gmail.com" // Email link format
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <img
+                                    loading="lazy"
+                                    src="/footer-mail.png" // Replace with the actual email icon path
+                                    className="object-contain w-5 aspect-square"
+                                    alt="Email"
+                                />
+                            </a>
+                            <span>ambreeny007@gmail.com</span>
+                        </div>
                     </div>
+
                 </div>
-                <div className="flex flex-col min-w-[240px] w-[304px]">
-                    <div className="text-xl font-semibold tracking-tight text-[#00A5B6]">
+                {/* <div className="flex flex-col min-w-[240px] w-[304px]">
+                    <div className="text-xl font-semibold tracking-tight text-[#BB5A5A]">
                         Get in touch
                     </div>
                     <form onSubmit={handleSubmit}>
@@ -167,12 +203,12 @@ export default function Footer() {
                                     type="email"
                                     placeholder="Email Address"
                                     value={email}
-                                    onChange={(e) => setEmail(e.target.value)} // Update email state
+                                    onChange={(e) => setEmail(e.target.value)}
                                     className="w-full focus:outline-none"
                                     required
                                 />
                             </div>
-                            <div className="flex overflow-hidden gap-2.5 justify-center rounded-tr-2xl rounded-br-2xl items-center px-2 py-3.5 bg-[#00A5B6] rounded-none min-h-[51px] w-[46px]">
+                            <div className="flex overflow-hidden gap-2.5 justify-center rounded-tr-2xl rounded-br-2xl items-center px-2 py-3.5 bg-[#BB5A5A] rounded-none min-h-[51px] w-[46px]">
                                 <button type="submit" className="object-contain self-stretch my-auto w-8 aspect-square">
                                     <img
                                         loading="lazy"
@@ -183,15 +219,12 @@ export default function Footer() {
                             </div>
                         </div>
                     </form>
-                </div>
+                </div> */}
             </div>
-            <img
-                loading="lazy"
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/bf9ddd2687c90f210b59c2cb2077231b3bb05c8c41ba7e52242153313fb26d95?placeholderIfAbsent=true&apiKey=4bbac2e9fd8543319fbc188f9510a76b"
-                className="object-contain mt-6 w-full aspect-[200] stroke-[2px] stroke-slate-600 max-md:max-w-full"
-            />
+            <div className="mt-3" style={{ border: '1px solid rgba(187, 90, 90, 0.5)' }} />
+
             <div className="mt-6 w-full text-base text-center font-light text-sm text-white max-md:max-w-full">
-                Copyright© 2024 Ambreen. All Rights Reserved.
+                Copyright© 2024 Ambreeny. All Rights Reserved.
             </div>
         </div>)
 }

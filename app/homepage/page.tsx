@@ -1,9 +1,11 @@
 import React from 'react'
-import ProfessionalExperience from '../components/pagination'
 import ToolsAndTechnologies from '../components/tools'
 import RecentProjects from '../components/recentProjects'
 import ProjectDiscussionForm from '../components/contactForm';
 import Link from 'next/link';
+import ToolLogosSection from '../components/toolsLogoSection';
+import InfoSection from '../components/workExperience';
+import Testimonials from '../components/testimonials';
 
 const Homepage = () => {
 
@@ -12,211 +14,345 @@ const Homepage = () => {
         <div className="flex flex-col">
             <div className="flex flex-col w-full max-md:max-w-full">
                 {/* HERO SECTION */}
-                <div id='home' className="px-6 flex flex-col lg:flex-row relative gap-10 justify-center w-full min-h-[846px] text-[#171717] mx-auto items-center max-w-[1500px]">
-                    <div className="flex absolute z-0 flex-col items-center text-center min-w-[240px] top-[37px] max-w-5xl mx-auto max-md:relative max-md:top-auto max-md:my-5">
-                        <div className="flex z-0 flex-col items-center self-center mx-auto max-w-full">
-                            <img
-                                loading="lazy"
-                                src="https://cdn.builder.io/api/v1/image/assets/TEMP/2f6d05037b2c9df3d167a957135fccbc628f82e9b5b5dbabd4ca261e8d0e3bdf?placeholderIfAbsent=true&apiKey=4bbac2e9fd8543319fbc188f9510a76b"
-                                className="object-contain max-w-full rounded-none aspect-[1.95] w-[125px] max-md:w-[80px]"
-                            />
-                            <div className="mt-2.5 text-8xl tracking-tighter leading-none max-md:text-4xl">
-                                <span className="font-semibold">I’m </span>
-                                <span className="font-semibold text-[#00A5B6]">Ambreen</span>
-                                <span className="font-semibold">!</span>
-                            </div>
-                            <div className="mt-2.5 text-6xl font-semibold tracking-tighter leading-[56px] max-md:text-4xl max-md:leading-10">
-                                Lead Automation Software Quality Assurance Engineer
-                                <br />
-                            </div>
-                        </div>
-                        <img
-                            loading="lazy"
-                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/94e7568702c70987619134468d6626d120852f52e0810b70ca2194ee8575b538?placeholderIfAbsent=true&apiKey=4bbac2e9fd8543319fbc188f9510a76b"
-                            className="object-contain absolute -bottom-3 z-0 aspect-[0.98] h-[88px] left-[-10px] max-md:hidden"
-                        />
-                    </div>
-
-                    <div className="flex absolute z-0 flex-col text-xl font-medium leading-8 bottom-[69px] md:left-[100px] min-w-[240px] max-w-[350px] max-md:relative max-md:bottom-auto max-md:left-auto max-md:w-full max-md:text-center">
-                        <img
-                            loading="lazy"
-                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/f70bc5c4357a3a1890b619af1c4becc5b1ba6e5ffe48b27d5a39706fde42d4e4?placeholderIfAbsent=true&apiKey=4bbac2e9fd8543319fbc188f9510a76b"
-                            className="object-contain w-9 aspect-square max-md:mx-auto"
-                        />
-                        <div className="mt-3">
-                        Over 8 years in software testing and quality assurance, specialize in automating tests, verifying secure code, and optimizing performance. My focus is to ensure that the software is of the highest quality and security before release, contributing to the success of every project I work on.
-                            <br />
-                        </div>
-                    </div>
-                    
-
-                    <div className="flex absolute z-0 flex-col items-end leading-none text-center bottom-[275px] right-[100px] text-neutral-900 max-md:relative max-md:bottom-auto max-md:right-auto max-md:items-center max-md:w-full">
-                        <img
-                            loading="lazy"
-                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/f387bb7a59d129b39303602333ee41a56ef631f118a33743978d9830c50ebe0a?placeholderIfAbsent=true&apiKey=4bbac2e9fd8543319fbc188f9510a76b"
-                            className="object-contain w-40 max-w-full aspect-[5] max-md:w-[80%]"
-                        />
-                        <div className="flex flex-col items-end mt-5 max-md:items-center">
-                            <div className="text-5xl font-bold tracking-tighter max-md:text-4xl">
-                                8+ Years
-                            </div>
-                            <div className="mt-1.5 text-xl tracking-tight">Experience</div>
+                <div id="home" className="font-poppins flex flex-col md:flex-row max-w-8xl py-6 px-6 md:px-8 md:py-8 gap-6 xl:gap-32 justify-between mx-auto md:pb-10">
+                    {/* Text Area */}
+                    <div className="flex flex-col justify-center items-start w-full lg:w-2/3 space-y-6">
+                        <h1 className="text-xl font-bold text-[#171717]">Hi I am</h1>
+                        <h1 className="text-3xl font-bold text-[#BB5A5A]">Ambreen</h1>
+                        <h1 className="text-3xl md:text-5xl font-extrabold text-[#171717]">Lead Automation</h1>
+                        <h1 className="text-4xl md:text-5xl font-extrabold text-[#171717] ml-5 md:ml-10">Software <span className="text-[#BB5A5A]">QA</span> Engineer</h1>
+                        <p className="text-lg text-[#171717] max-w-xl text-justify">
+                            With 9+ years in Automation QA and Full Stack Development, I deliver scalable solutions, optimize testing, enhance code quality, and implement CI/CD pipelines, ensuring efficient, high-quality, user-friendly software.
+                        </p>
+                        <div className="flex space-x-4">
+                            <Link
+                                href="https://calendly.com/ambreeny007"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="flex justify-center items-center bg-[#BB5A5A] w-[150px] text-center hover:bg-[#9e4c4c] transition duration-300 text-white px-6 py-2.5 rounded-[7px]">
+                                Hire Me
+                            </Link>
+                            <a href="/Ambreen Younas Lead Automation Software Quality Assurance Engineer.pdf" download>
+                                <div className="bg-transparent border-2 border-[#BB5A5A] hover:bg-[#BB5A5A] hover:bg-opacity-15 transition duration-300 text-[#BB5A5A] w-[150px] text-center py-2.5 rounded-[7px] transition duration-200">
+                                    Download CV
+                                </div>
+                            </a>
                         </div>
                     </div>
 
-                    <div className="flex absolute left-2/4 z-0 flex-col text-white rounded-none -translate-x-2/4 bottom-[-276px] min-h-[100px] lg:h-[769px] min-w-[240px] translate-y-[0%] w-[660px] max-md:relative max-md:bottom-auto max-md:left-auto max-md:translate-x-0 max-md:w-full">
-                        <div className="flex relative flex-col justify-center items-center px-20 -mb-10 mt-32 md-mb-0 md:mt-0 xl:py-80 w-full min-h-[100px] lg:min-h-[769px] max-md:px-5 max-md:py-24">
-                            <img
-                                loading="lazy"
-                                srcSet="/ambreen.png"
-                                className="object-cover absolute xl:size-full"
-                            />
-                            <div className="flex overflow-hidden relative gap-2.5 justify-center items-center border border-white px-2.5 py-2 mb-0 max-w-full bg-white bg-opacity-10 min-h-[67px] rounded-[50px] max-w-[351px] max-md:w-full">
-                                <a href="/Ambreen - Lead Automation QA Engineer.pdf" download>
-                                    <div className="overflow-hidden self-stretch px-2 py-3.5 text-center my-auto w-44 md:w-52 text-lg font-medium tracking-tight bg-black min-h-[54px] rounded-[60px] cursor-pointer">
-                                        Download CV
-                                    </div>
-                                </a>
-                                <Link
-                                    href="https://calendly.com/ambreeny007"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className='overflow-hidden flex-1 text-center shrink gap-2.5 self-stretch py-2 pr-2.5 pl-2.5 my-auto text-lg md:text-2xl font-light rounded-[60px] cursor-pointer'
-                                >
-                                    Hire me
-                                </Link>
-
-                            </div>
-                            <img
-                                src="/arrowup.png"  // Update with the correct path to your arrow image
-                                alt="Arrow"
-                                className="hidden lg:flex absolute -right-52 top-1/1 transform -translate-y-1/2"  // Adjust size and position as needed
-                            />
-                        </div>
+                    {/* Image Area */}
+                    <div className="flex justify-center items-center w-full md:w-1/3">
+                        <img
+                            src="/ambreen.png"
+                            alt="Ambreen's Image"
+                            className="w-full h-auto mb-6 max-w-sm md:max-w-full object-cover rounded-lg"
+                        />
                     </div>
                 </div>
-                {/* Professional Experience SEction */}
-                <ProfessionalExperience />
-                {/* Work Experience */}
-                <div id='work' className="flex flex-col items-center px-16 py-16 w-full max-md:px-5 max-md:max-w-full">
-                    <div className="text-6xl tracking-tighter leading-none text-[#171717] max-md:max-w-full max-md:text-4xl">
-                        <span className="font-medium">My </span>
-                        <span className="font-semibold text-[#00A5B6]">Work Experience</span>
-                    </div>
 
-                    {/* Use Grid Layout for Work Experience */}
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-14 max-md:mt-10 w-full max-w-7xl">
-                        <div className="flex gap-10 self-stretch pr-6 my-auto rounded-lg border border-solid bg-zinc-50 border-black border-opacity-0 max-md:max-w-full">
-                            <div className="flex shrink-0 h-56 bg-[#00A5B6] w-[7px]" />
-                            <div className="flex flex-col grow shrink-0 self-center mt-4 basis-0 w-fit max-md:max-w-full">
-                                <div className=" text-2xl lg:text-3xl font-semibold leading-9 text-[#171717] md:max-w-[300px]">
-                                    Sr. QA Automation Engineer
-                                </div>
-                                <div className="mt-3.5 text-lg lg:text-xl font-medium text-[#7F7F7F] max-md:max-w-full">
-                                    Involved in test cases review by development team, product management, and modified the test cases based on their feedback.
-                                </div>
-                            </div>
-                        </div>
+                {/* Tools Logo SEction */}
+                <ToolLogosSection />
 
-                        <div className="flex gap-10 self-stretch pr-6 my-auto rounded-lg border border-solid bg-zinc-50 border-black border-opacity-0 max-md:max-w-full">
-                            <div className="flex shrink-0 h-56 bg-[#00A5B6] w-[7px]" />
-                            <div className="flex flex-col grow shrink-0 self-center mt-4 basis-0 w-fit max-md:max-w-full">
-                                <div className=" text-2xl lg:text-3xl font-semibold leading-9 text-[#171717] md:max-w-[400px]">
-                                    Software Development Engineer in Test
-                                </div>
-                                <div className="mt-3.5 text-lg lg:text-xl font-medium text-[#7F7F7F] max-md:max-w-full">
-                                    Create automated test frameworks, design and implementation of test cases, and writing code to improve the overall testability of software.
-                                </div>
-                            </div>
-                        </div>
+                {/* WORK EXPERIENCE */}
+                <InfoSection />
 
-                        <div className="flex gap-10 self-stretch pr-6 my-auto rounded-lg border border-solid bg-zinc-50 border-black border-opacity-0  max-md:max-w-full">
-                            <div className="flex shrink-0 h-56 bg-[#00A5B6] w-[7px]" />
-                            <div className="flex flex-col grow shrink-0 self-center mt-4 basis-0 w-fit max-md:max-w-full">
-                                <div className=" text-2xl lg:text-3xl font-semibold leading-none text-[#171717] md:max-w-[300px]">
-                                    QA Engineer
-                                </div>
-                                <div className="mt-3.5 text-lg lg:text-xl font-medium text-[#7F7F7F] max-md:max-w-full">
-                                    Analyzed business requirements, documented business requirements specifications, wrote Test Plans, Test Cases.
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="flex gap-10 self-stretch pr-6 my-auto rounded-lg border border-solid bg-zinc-50 border-black border-opacity-0 max-md:max-w-full">
-                            <div className="flex shrink-0 h-56 bg-[#00A5B6] w-[7px]" />
-                            <div className="flex flex-col grow shrink-0 self-center mt-4 basis-0 w-fit max-md:max-w-full">
-                                <div className=" text-2xl lg:text-3xl font-semibold leading-none text-[#171717] md:max-w-[300px]">
-                                    QA Tester
-                                </div>
-                                <div className="mt-3.5 text-lg lg:text-xl font-medium text-[#7F7F7F] max-md:max-w-full">
-                                    Analyzed requirements, functional specification & required documents for Manual Testing.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 {/* Recent Projects */}
                 <RecentProjects />
                 {/* Tools and Technologies */}
                 <ToolsAndTechnologies />
+
+                {/* key Achievements */}
+                <Testimonials />
+
+                {/* Things I Love Section */}
+                <section className="py-6 md:py-16 px-6 md:px-10 max-w-7xl mx-auto">
+                    {/* Container for Left and Right content */}
+                    <div className="flex flex-col md:grid md:grid-cols-2 items-center justify-between gap-12">
+
+                        {/* Left Side: Heading, Description, and Button */}
+                        <div className="w-full md:w-full text-center md:text-left md:mr-10">
+                            <h2 style={{ lineHeight: "60px" }} className="text-3xl md:text-5xl max-w-sm font-semibold text-black mb-4">
+                                <span className='text-[#BB5A5A]'>Things</span> I Love Doing
+                            </h2>
+                            <p className="text-lg text-[#323433] max-w-md mb-6">
+                                I’m fueled by coffee, inspired by books, and passionate about tech. Nature recharges me, and music is my therapy. From coding and gadgets to hiking and reading, I embrace creativity and growth in all forms, making every day an adventure.
+                            </p>
+                            <button className="px-10 py-2.5 bg-[#BB5A5A] text-white rounded-[7px] hover:bg-[#9e4c4c] transition duration-300">
+                                Hire Me
+                            </button>
+                        </div>
+
+                        {/* Right Side: 6 Cards */}
+                        <div className=" grid grid-cols-1 gap-6 md:ml-10">
+                            {/* Card 1 */}
+                            <div className="md:w-[350px] flex items-center bg-white rounded-lg px-3 md:px-6 py-3.5"
+                                style={{
+                                    boxShadow: '0 4px 20px rgba(187, 90, 90, 0.3), 0 1px 10px rgba(187, 90, 90, 0.2)',
+                                }}>
+                                <img src="/coffee.png" alt="Icon 1" className="h-7 mr-4" /> {/* Replace with actual icon */}
+                                <h3 className="text-xl font-semibold text-black">I live for coffee</h3>
+                            </div>
+
+
+                            {/* Card 2 */}
+                            <div className="md:w-[350px] md:ml-16 flex items-center bg-white rounded-lg px-3 md:px-6  py-3.5"
+                                style={{
+                                    boxShadow: '0 4px 20px rgba(187, 90, 90, 0.3), 0 1px 10px rgba(187, 90, 90, 0.2)',
+                                }}>
+                                <img src="/book.png" alt="Icon 1" className="h-7 mr-4" /> {/* Replace with actual icon */}
+                                <h3 className="text-xl font-semibold text-black">Books are my escape</h3>
+                            </div>
+
+
+                            {/* Card 3 */}
+                            <div className="md:w-[350px] flex items-center bg-white rounded-lg px-3 md:px-6  py-3.5"
+                                style={{
+                                    boxShadow: '0 4px 20px rgba(187, 90, 90, 0.3), 0 1px 10px rgba(187, 90, 90, 0.2)',
+                                }}>
+                                <img src="/cpu.png" alt="Icon 1" className="h-7 mr-4" /> {/* Replace with actual icon */}
+                                <h3 className="text-xl font-semibold text-black">Tech is my passion</h3>
+                            </div>
+
+
+                            {/* Card 4 */}
+                            <div className="md:w-[350px] md:ml-16 flex items-center bg-white rounded-lg px-3 md:px-6  py-3.5"
+                                style={{
+                                    boxShadow: '0 4px 20px rgba(187, 90, 90, 0.3), 0 1px 10px rgba(187, 90, 90, 0.2)',
+                                }}>
+                                <img src="/sun.png" alt="Icon 1" className="h-7 mr-4" /> {/* Replace with actual icon */}
+                                <h3 className="text-xl font-semibold text-black">I thrive in nature</h3>
+                            </div>
+
+
+                            {/* Card 5 */}
+                            <div className="md:w-[350px] flex items-center bg-white rounded-lg px-3 md:px-6  py-3.5"
+                                style={{
+                                    boxShadow: '0 4px 20px rgba(187, 90, 90, 0.3), 0 1px 10px rgba(187, 90, 90, 0.2)',
+                                }}>
+                                <img src="/coffee.png" alt="Icon 1" className="h-7 mr-4" /> {/* Replace with actual icon */}
+                                <h3 className="text-xl font-semibold text-black">I live for coffee</h3>
+                            </div>
+
+
+                            {/* Card 6 */}
+                            <div className="md:w-[350px] md:ml-16 flex items-center bg-white rounded-lg px-3 md:px-6  py-3.5"
+                                style={{
+                                    boxShadow: '0 4px 20px rgba(187, 90, 90, 0.3), 0 1px 10px rgba(187, 90, 90, 0.2)',
+                                }}>
+                                <img src="/music.png" alt="Icon 1" className="h-7 mr-4" /> {/* Replace with actual icon */}
+                                <h3 className="text-xl font-semibold text-black">Music is my therapy</h3>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </section>
+
+
+                {/* Testimonials Section */}
+                <section className="py-6 md:py-16 px-6 md:px-10 max-w-7xl mx-auto">
+                    {/* Heading */}
+                    <h2 className="text-center text-3xl md:text-5xl font-bold text-black mb-12">
+                        Testimonials
+                    </h2>
+
+                    {/* Testimonial Cards */}
+                    <div className="flex flex-wrap justify-center gap-8">
+                        {/* Testimonial 1 */}
+                        <div
+                            className="w-full md:w-[350px] bg-white rounded-lg p-6"
+                            style={{
+                                boxShadow: '0px 4px 20px rgba(187, 90, 90, 0.3), 0px 1px 10px rgba(187, 90, 90, 0.2)',
+                            }}
+                        >                            {/* Star Rating */}
+                            <div className="flex justify-start mb-4">
+                                <img src="/star-rating.png" alt="Rating" className="w-24" /> {/* Replace with your star rating image */}
+                            </div>
+
+                            {/* Testimonial Paragraph */}
+                            <p className="text-md font-md text-black mb-6">
+                                Fantastic team to work with. Really stepped up and took care of everything we asked them to do for us! Would rehire her in the future!. Highly recommended!          </p>
+
+                            {/* Client Info */}
+                            <div className="flex items-center gap-4">
+                                <img src="/test-1.png" alt="Client" className="w-12 h-12 rounded-full object-cover" />
+                                <div>
+                                    <p className="font-semibold text-gray-800">Amir Uddin</p>
+                                    <p className="text-[#92929D]">CEO & Founder</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Testimonial 2 */}
+                        <div
+                            className="w-full md:w-[350px] bg-white rounded-lg p-6"
+                            style={{
+                                boxShadow: '0px 4px 20px rgba(187, 90, 90, 0.3), 0px 1px 10px rgba(187, 90, 90, 0.2)',
+                            }}
+                        >                            {/* Star Rating */}
+                            <div className="flex justify-start mb-4">
+                                <img src="/star-rating.png" alt="Rating" className="w-24" /> {/* Replace with your star rating image */}
+                            </div>
+
+                            {/* Testimonial Paragraph */}
+                            <p className="text-md font-md text-black mb-6">
+                                Ambreen demonstrated exceptional proficiency in WordPress, PHP, CSS, and CSS liquid along with a strong understanding of REST APIs.          </p>
+
+                            {/* Client Info */}
+                            <div className="flex items-center gap-4">
+                                <img src="/test-2.png" alt="Client" className="w-12 h-12 rounded-full object-cover" />
+                                <div>
+                                    <p className="font-semibold text-gray-800">Salim Ahmed</p>
+                                    <p className="text-[#92929D]">CTO</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Testimonial 3 */}
+                        <div
+                            className="w-full md:w-[350px] bg-white rounded-lg p-6"
+                            style={{
+                                boxShadow: '0px 4px 20px rgba(187, 90, 90, 0.3), 0px 1px 10px rgba(187, 90, 90, 0.2)',
+                            }}
+                        >         {/* Star Rating */}
+                            <div className="flex justify-start mb-4">
+                                <img src="/star-rating.png" alt="Rating" className="w-24" /> {/* Replace with your star rating image */}
+                            </div>
+
+                            {/* Testimonial Paragraph */}
+                            <p className="text-md font-md text-black mb-6">
+                                Ambreen demonstrated exceptional proficiency in WordPress, PHP, CSS, and CSS liquid along with a strong understanding of REST APIs.          </p>
+
+                            {/* Client Info */}
+                            <div className="flex items-center gap-4">
+                                <img src="/test-1.png" alt="Client" className="w-12 h-12 rounded-full object-cover" />
+                                <div>
+                                    <p className="font-semibold text-gray-800">Amir Uddin</p>
+                                    <p className="text-[#92929D]">CEO & Founder</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                {/* Skills section */}
+                <section className="relative py-6 md:py-16 px-6">
+                    {/* Heading */}
+                    <h2 className="text-center text-4xl md:text-5xl font-semibold text-black mb-8 md:-mb-4">
+                        My <span className='text-[#BB5A5A]'>Skills</span>
+                    </h2>
+                    {/* Background image container */}
+                    <div
+                        className="relative bg-cover bg-center h-[430px] sm:h-[350px] md:h-[200px] max-w-7xl mx-auto"
+                        style={{ backgroundImage: 'url("/skills-bg.png")' }} // Replace with your background image path
+                    >
+                        {/* Card container with absolute positioning */}
+                        <div className="absolute inset-0 flex flex-wrap justify-center items-center gap-8 md:gap-10 md:-mb-12">
+                            {/* Card 1 */}
+                            <div className="h-14 bg-white shadow-xl rounded-full border-t-4 border-[#BB5A5A] flex items-center justify-center px-5 ">
+                                <h3 className="text-lg md:text-xl font-semibold text-gray-800">Leadership</h3>
+                            </div>
+
+                            {/* Card 2 */}
+                            <div className="h-14 bg-white shadow-xl rounded-full border-t-4 border-[#BB5A5A] flex items-center justify-center px-5 ">
+                                <h3 className="text-lg md:text-xl font-semibold text-gray-800">Communication</h3>
+                            </div>
+
+                            {/* Card 3 */}
+                            <div className="h-14 bg-white shadow-xl rounded-full border-t-4 border-[#BB5A5A] flex items-center justify-center px-5 ">
+                                <h3 className="text-lg md:text-xl font-semibold text-gray-800">Adaptability</h3>
+                            </div>
+
+                            {/* Card 4 */}
+                            <div className="h-14 bg-white shadow-xl rounded-full border-t-4 border-[#BB5A5A] flex items-center justify-center px-5">
+                                <h3 className="text-lg md:text-xl font-semibold text-gray-800">Problem-Solving</h3>
+                            </div>
+
+                            {/* Card 5 */}
+                            <div className="h-14 bg-white shadow-xl rounded-full border-t-4 border-[#BB5A5A] flex items-center justify-center px-5">
+                                <h3 className="text-lg md:text-xl font-semibold text-gray-800">Teamwork</h3>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
                 {/* Why HIRE ME */}
-                <div id='hire' className="flex overflow-hidden flex-col justify-center items-center py-14 pr-16 w-full bg-gray-100 min-h-[703px] rounded-[50px] max-md:px-5 max-md:max-w-full">
+                <div id='hire' className="flex overflow-hidden flex-col justify-center items-center py-14 pr-16 w-full bg-[#EACEB4] bg-opacity-10 min-h-[703px] max-md:px-5 max-md:max-w-full">
                     <div className="flex flex-col md:flex-row relative justify-between items-start max-w-full min-h-[600px] w-full md:w-[1299px]">
 
                         {/* Left side - Image */}
                         <img
                             loading="lazy"
-                            srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/cbd7613baaf31b62b54222c17dfa27a79ad7c7e358c08cf18b398d40394098a4?placeholderIfAbsent=true&apiKey=4bbac2e9fd8543319fbc188f9510a76b&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/cbd7613baaf31b62b54222c17dfa27a79ad7c7e358c08cf18b398d40394098a4?placeholderIfAbsent=true&apiKey=4bbac2e9fd8543319fbc188f9510a76b&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/cbd7613baaf31b62b54222c17dfa27a79ad7c7e358c08cf18b398d40394098a4?placeholderIfAbsent=true&apiKey=4bbac2e9fd8543319fbc188f9510a76b&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/cbd7613baaf31b62b54222c17dfa27a79ad7c7e358c08cf18b398d40394098a4?placeholderIfAbsent=true&apiKey=4bbac2e9fd8543319fbc188f9510a76b&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/cbd7613baaf31b62b54222c17dfa27a79ad7c7e358c08cf18b398d40394098a4?placeholderIfAbsent=true&apiKey=4bbac2e9fd8543319fbc188f9510a76b&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/cbd7613baaf31b62b54222c17dfa27a79ad7c7e358c08cf18b398d40394098a4?placeholderIfAbsent=true&apiKey=4bbac2e9fd8543319fbc188f9510a76b&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/cbd7613baaf31b62b54222c17dfa27a79ad7c7e358c08cf18b398d40394098a4?placeholderIfAbsent=true&apiKey=4bbac2e9fd8543319fbc188f9510a76b&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/cbd7613baaf31b62b54222c17dfa27a79ad7c7e358c08cf18b398d40394098a4?placeholderIfAbsent=true&apiKey=4bbac2e9fd8543319fbc188f9510a76b"
-                            className="object-contain z-0 self-start aspect-[1.12] h-[469px] min-w-[240px] w-full md:w-[527px] max-md:max-w-full"
+                            src="/ambreen-hire.png"
+                            alt='hire me'
+                            className="object-contain self-start mb-10 md:mb-0 max-w-full"
                         />
 
                         {/* Right side - Content */}
                         <div className="flex flex-col flex-1 shrink my-auto md:ml-16 basis-0 min-w-[240px] max-w-full">
-                            <div className="w-full text-6xl font-semibold tracking-tighter leading-none text-[#171717] max-w-full md:text-4xl text-center md:text-left">
-                                Why <span className="text-[#00A5B6]">Hire me</span>?
-                            </div>
-                            <div className="mt-12 text-xl tracking-tight text-[#606060] max-w-[600px] leading-7 md:mt-10 text-center md:text-left">
-                                Excellent working experience in API testing, product reviews, product regression and new feature testing, QA process management, release management and making the release report, ensuring all critical/major bugs are fixed before release.
-                            </div>
+                            <h2 className="w-full text-3xl font-semibold leading-7 text-[#171717] max-w-full md:text-5xl text-center md:text-left">
+                                Why <span className="text-[#BB5A5A]">Hire me</span>?
+                            </h2>
+                            <p className="mt-12 text-lg  text-[#323433] max-w-[500px] leading-8 md:mt-10 text-center md:text-left">
+                                With 8+ years in Automation QA and Full Stack Development, I deliver scalable solutions, optimize testing, and implement CI/CD pipelines. Proficient in Selenium, Appium, Jenkins, and languages like Python, Java, and JavaScript, I ensure high-quality, user-friendly software through efficient testing, attention to detail, and cross-functional collaboration.                            </p>
+
                             <div className="flex flex-wrap gap-2.5 items-start mt-12 w-full md:mt-10">
-                                <div className="flex flex-col flex-1 shrink basis-0 min-w-[240px] items-center md:items-start">
-                                    <div className="flex gap-1 items-center text-4xl font-bold tracking-tight whitespace-nowrap text-slate-800">
+                                <div className="flex flex-col flex-1 shrink basis-0  items-center md:items-start">
+                                    <div className="flex gap-1 items-center text-2xl md:text-4xl font-bold tracking-tight whitespace-nowrap text-black">
                                         <img
                                             loading="lazy"
-                                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/f8fa3c1a439a45d7f3f40bd33923811b39db58bd4a99a7e8cbcc008f628a68e4?placeholderIfAbsent=true&apiKey=4bbac2e9fd8543319fbc188f9510a76b"
-                                            className="object-contain w-12 aspect-square"
+                                            src='/star-rataing.png'
+                                            alt='project-completed'
+                                            className="object-contain w-10 "
                                         />
                                         <div>150+</div>
                                     </div>
-                                    <div className="mt-2.5 text-xl tracking-tight text-gray-500">
+                                    <div className="mt-2.5 text-md md:text-lg text-center text-[#667085]">
                                         Projects Completed
                                     </div>
                                 </div>
-                                <div className="flex flex-col flex-1 shrink basis-0 min-w-[240px] items-center md:items-start">
-                                    <div className="flex gap-1 items-center text-4xl font-bold tracking-tight whitespace-nowrap text-slate-800">
+                                <div className="flex flex-col flex-1 shrink basis-0 w-[150px] items-center md:items-start">
+                                    <div className="flex gap-1 items-center text-2xl md:text-4xl font-bold tracking-tight whitespace-nowrap text-black">
                                         <img
                                             loading="lazy"
-                                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/2212333cd7d7143f4e33fbdee980369fbd5069ab7ab4e64cce7b9cf8ebd8aca4?placeholderIfAbsent=true&apiKey=4bbac2e9fd8543319fbc188f9510a76b"
-                                            className="object-contain w-12 aspect-square"
+                                            src='/project.png'
+                                            alt='Star rating'
+                                            className="object-contain w-10 "
                                         />
                                         <div className="self-stretch my-auto">5.0</div>
                                     </div>
-                                    <div className="mt-2.5 text-xl tracking-tight text-gray-500">
+                                    <div className="mt-2.5 text-md md:text-lg text-center text-[#667085]">
                                         Client Satisfaction
+                                    </div>
+                                </div>
+                                <div className="flex flex-col flex-1 shrink basis-0 items-center md:items-start">
+                                    <div className="flex gap-1 items-center text-2xl md:text-4xl font-bold tracking-tight whitespace-nowrap text-black">
+                                        <img
+                                            loading="lazy"
+                                            src='/calender.png'
+                                            alt='Calender'
+                                            className="object-contain w-10 "
+                                        />
+                                        <div className="self-stretch my-auto">9+</div>
+                                    </div>
+                                    <div className="mt-2.5 text-md md:text-lg text-center text-[#667085]">
+                                        Years Experience
                                     </div>
                                 </div>
                             </div>
                             <Link
-                                    href="https://calendly.com/ambreeny007"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className='flex justify-center md:justify-start gap-2.5 md:self-start px-14 py-4 mt-12 text-3xl font-semibold tracking-tight text-white bg-neutral-900 rounded-[24px] max-md:px-5 max-md:mt-10 cursor-pointer'
-                                >
-                                    Hire me
-                                </Link>
+                                href="https://calendly.com/ambreeny007"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="flex justify-center md:justify-start gap-2.5 md:self-start px-14 py-2.5 mt-12 text-xl text-white bg-[#BB5A5A] rounded-[7px] max-md:px-5 max-md:mt-10 cursor-pointer border-2 border-transparent transition-all duration-300 hover:bg-white hover:border-[#BB5A5A] hover:text-[#BB5A5A]"
+                            >
+                                Hire me
+                            </Link>
+
                         </div>
                     </div>
                 </div>
+
                 {/* Contact Section */}
                 <ProjectDiscussionForm />
             </div>

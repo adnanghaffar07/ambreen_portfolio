@@ -17,9 +17,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/* Preload Google Fonts and Local Fonts */}
+        {/* Preload Google Fonts */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        
+        {/* Only load the Poppins and Lufga fonts */}
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Lufga:wght@400;500;600&display=swap" rel="stylesheet"/>
       </head>
       <body>
         {children}
