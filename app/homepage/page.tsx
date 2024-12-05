@@ -319,7 +319,7 @@ const Homepage = () => {
                                             alt='Star rating'
                                             className="object-contain w-10 "
                                         />
-                                        <div className="self-stretch my-auto">5.0</div>
+                                        <div className="self-stretch my-auto">4.9</div>
                                     </div>
                                     <div className="mt-2.5 text-md md:text-lg text-center text-[#667085]">
                                         Client Satisfaction
