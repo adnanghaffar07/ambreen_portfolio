@@ -40,7 +40,7 @@ body {
   background: var(--background);
   letter-spacing: 0.25px;
   word-spacing: 0.25px;
-  font-family: 'Lufga', sans-serif;
+  font-family: 'Poppins', 'sans-serif';
   font-optical-sizing: auto;
   
 }
