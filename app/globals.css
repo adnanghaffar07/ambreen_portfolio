@@ -3,19 +3,29 @@
 @tailwind utilities;
 
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+/* Add this to your global styles */
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
 
 /* global.css or index.css */
 @layer base {
   body {
     font-family: 'Lufga', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 }
 
-
+html {
+  scroll-behavior: smooth;
+} 
 :root {
   --background: #ffffff;
   --foreground: #171717;
 }
+
+
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -23,18 +33,9 @@
     --foreground: #ededed;
   }
 }
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
 
-.animate-scroll {
-  animation: scroll 25s linear infinite;
-}
+
+
 body {
   color: var(--foreground);
   background: var(--background);
@@ -70,4 +71,3 @@ textarea:focus {
     text-wrap: balance;
   }
 }
-
