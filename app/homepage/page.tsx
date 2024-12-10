@@ -221,16 +221,18 @@ const Homepage = () => {
 
                             {/* Testimonial Paragraph */}
                             <p className="text-md font-md text-black mb-6">
-                                Ambreen demonstrated exceptional proficiency in WordPress, PHP, CSS, and CSS liquid along with a strong understanding of REST APIs.          </p>
+                                Ambreen showcased outstanding skills in Shopify, JavaScript, HTML, and SCSS, coupled with a solid grasp of GraphQL APIs.
+                            </p>
 
                             {/* Client Info */}
                             <div className="flex items-center gap-4">
-                                <img src="/test-1.png" alt="Client" className="w-12 h-12 rounded-full object-cover" />
+                                <img src="/test-3.jpg" alt="Client" className="w-12 h-12 rounded-full object-cover" />
                                 <div>
-                                    <p className="font-semibold text-gray-800">Amir Uddin</p>
-                                    <p className="text-[#92929D]">CEO & Founder</p>
+                                    <p className="font-semibold text-gray-800">Sofia Karim</p>
+                                    <p className="text-[#92929D]">Creative Director</p>
                                 </div>
                             </div>
+
                         </div>
                     </div>
                 </section>
@@ -294,7 +296,7 @@ const Homepage = () => {
                                 Why <span className="text-[#BB5A5A]">Hire me</span>?
                             </h2>
                             <p className="mt-12 text-lg  text-[#323433] max-w-[500px] leading-8 md:mt-10 text-center md:text-left">
-                                With 8+ years in Automation QA and Full Stack Development, I deliver scalable solutions, optimize testing, and implement CI/CD pipelines. Proficient in Selenium, Appium, Jenkins, and languages like Python, Java, and JavaScript, I ensure high-quality, user-friendly software through efficient testing, attention to detail, and cross-functional collaboration.                            </p>
+                                With 9+ years in Automation QA and Full Stack Development, I deliver scalable solutions, optimize testing, and implement CI/CD pipelines. Proficient in Selenium, Appium, Jenkins, and languages like Python, Java, and JavaScript, I ensure high-quality, user-friendly software through efficient testing, attention to detail, and cross-functional collaboration.                            </p>
 
                             <div className="flex flex-wrap gap-2.5 items-start mt-12 w-full md:mt-10">
                                 <div className="flex flex-col flex-1 shrink basis-0  items-center md:items-start">

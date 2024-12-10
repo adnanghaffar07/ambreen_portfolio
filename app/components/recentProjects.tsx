@@ -99,10 +99,10 @@ const RecentProjects = () => {
                     name: "QA Automation",
                     image: "/recent10.png",
                 },
-                {
-                    name: "QA Automation",
-                    image: "/recent7.png",
-                },
+                // {
+                //     name: "QA Automation",
+                //     image: "/recent7.png",
+                // },
                 {
                     name: "QA Manual Testing",
                     image: "/recent3.png",
@@ -161,7 +161,7 @@ const RecentProjects = () => {
                                 setActiveCategoryIndex(index);
                                 setCurrentPage(1); // Reset to first page when switching category
                             }}
-                            className={`cursor-pointer overflow-hidden px-8 py-3.5 my-auto font-medium tracking-tight rounded-[10px] min-h-[54px] ${activeCategoryIndex === index
+                            className={`cursor-pointer overflow-hidden px-8 py-3.5 my-auto font-medium rounded-[10px] min-h-[54px] ${activeCategoryIndex === index
                                 ? 'bg-[#BB5A5A] text-white' // Active tab styles
                                 : 'bg-transparent text-black' // Inactive tab styles
                                 }`}
@@ -176,9 +176,9 @@ const RecentProjects = () => {
             <div className="flex flex-col mt-16 max-w-full text-xl leading-tight text-white max-w-7xl mx-auto max-md:mt-10">
                 <div className="flex flex-wrap gap-7 items-center justify-center w-full">
                     {paginatedProjects.map((project, idx) => (
-                        <div key={idx} className="flex flex-col w-[25%] shrink rounded-sm max-md:w-full">
-                            <div className="flex overflow-hidden flex-row w-full max-md:max-w-full">
-                                <div className="flex relative flex-row w-full mx-auto max-md:max-w-full">
+                        <div key={idx} className="flex flex-col w-[250px] md:w-[280px] shrink rounded-sm max-md:w-full">
+                            <div className="flex overflow-hidden flex-row w-full">
+                                <div className="flex relative flex-row mx-auto">
                                     <img
                                         loading="lazy"
                                         src={project.image}
@@ -186,6 +186,7 @@ const RecentProjects = () => {
                                         alt={project.name}
                                     />
                                 </div>
+
                             </div>
                         </div>
                     ))}

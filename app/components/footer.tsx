@@ -149,6 +149,7 @@ export default function Footer() {
                                 href="tel:+16133166042" // Telephone link format
                                 target="_blank"
                                 rel="noopener noreferrer"
+                                className="flex flex-row gap-3"
                             >
                                 <img
                                     loading="lazy"
@@ -156,14 +157,17 @@ export default function Footer() {
                                     className="object-contain w-5 aspect-square"
                                     alt="Phone"
                                 />
+                                  <p>+1 (613) 3166042</p>
                             </a>
-                            <span>+1 (613) 3166042</span>
+                          
                         </div>
                         <div className="flex items-center gap-3 mt-5 cursor-pointer">
                             <a
                                 href="https://www.ambreeny.com/" // Email link format
                                 target="_blank"
                                 rel="noopener noreferrer"
+                                className="flex flex-row gap-3"
+
                             >
                                 <img
                                     loading="lazy"
@@ -171,14 +175,17 @@ export default function Footer() {
                                     className="object-contain w-5 aspect-square"
                                     alt="Email"
                                 />
+                                   <p>ambreeny.com</p>
                             </a>
-                            <span>ambreeny.com</span>
+                         
                         </div>
                         <div className="flex items-center gap-3 mt-5 cursor-pointer">
                             <a
                                 href="mailto:ambreeny007@gmail.com" // Email link format
                                 target="_blank"
                                 rel="noopener noreferrer"
+                                className="flex flex-row gap-3"
+
                             >
                                 <img
                                     loading="lazy"
@@ -186,8 +193,8 @@ export default function Footer() {
                                     className="object-contain w-5 aspect-square"
                                     alt="Email"
                                 />
+                            <p>ambreeny007@gmail.com</p>
                             </a>
-                            <span>ambreeny007@gmail.com</span>
                         </div>
                     </div>
 
