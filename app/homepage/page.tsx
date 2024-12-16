@@ -123,19 +123,8 @@ const Homepage = () => {
                                 <h3 className="text-xl font-semibold text-black">I thrive in nature</h3>
                             </div>
 
-
-                            {/* Card 5 */}
-                            <div className="md:w-[350px] flex items-center bg-white rounded-lg px-3 md:px-6  py-3.5"
-                                style={{
-                                    boxShadow: '0 4px 20px rgba(187, 90, 90, 0.3), 0 1px 10px rgba(187, 90, 90, 0.2)',
-                                }}>
-                                <img src="/coffee.png" alt="Icon 1" className="h-7 mr-4" /> {/* Replace with actual icon */}
-                                <h3 className="text-xl font-semibold text-black">I live for coffee</h3>
-                            </div>
-
-
                             {/* Card 6 */}
-                            <div className="md:w-[350px] md:ml-16 flex items-center bg-white rounded-lg px-3 md:px-6  py-3.5"
+                            <div className="md:w-[350px] flex items-center bg-white rounded-lg px-3 md:px-6  py-3.5"
                                 style={{
                                     boxShadow: '0 4px 20px rgba(187, 90, 90, 0.3), 0 1px 10px rgba(187, 90, 90, 0.2)',
                                 }}>
