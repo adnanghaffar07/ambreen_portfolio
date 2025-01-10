@@ -173,7 +173,7 @@ const ToolsAndTechnologies = () => {
                                 className="object-contain rounded-xl items-center justify-center aspect-square w-[88px]"
                                 alt={tool.name}
                             />
-                            <div className="mt-2.5 text-sm leading-7 max-w-[100px]">{tool.name}</div>
+                            <div className="mt-2.5 text-sm leading-7 max-w-[100px] whitespace-nowrap">{tool.name}</div>
                         </div>
                     ))}
                 </div>

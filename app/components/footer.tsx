@@ -231,7 +231,7 @@ export default function Footer() {
             <div className="mt-3" style={{ border: '1px solid rgba(187, 90, 90, 0.5)' }} />
 
             <div className="mt-6 w-full text-base text-center font-light text-sm text-white max-md:max-w-full">
-                Copyright© 2024 Ambreeny. All Rights Reserved.
+                Copyright© 2025 Ambreeny. All Rights Reserved.
             </div>
         </div>)
 }

@@ -26,7 +26,7 @@ const Testimonials = () => {
         {
             timeframe: "5",
             heading: "Financial Management & Fundraising",
-            description: "Raised over $50million in funding and established strong financial practics , significantly increasing profitability.",
+            description: "Raised over $50million in funding and established strong financial practices , significantly increasing profitability.",
         },
         {
             timeframe: "6",

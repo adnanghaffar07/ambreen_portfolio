@@ -22,7 +22,7 @@ const Homepage = () => {
                         <h1 className="text-3xl md:text-5xl font-extrabold text-[#171717]">Lead Automation</h1>
                         <h1 className="text-4xl md:text-5xl font-extrabold text-[#171717] ml-5 md:ml-10">Software <span className="text-[#BB5A5A]">QA</span> Engineer</h1>
                         <p className="text-lg text-[#171717] max-w-xl text-justify">
-                            With 9+ years in Automation QA and Full Stack Development, I deliver scalable solutions, optimize testing, enhance code quality, and implement CI/CD pipelines, ensuring efficient, high-quality, user-friendly software.
+                            With 8+ years in Automation QA and Full Stack Development, I deliver scalable solutions, optimize testing, enhance code quality, and implement CI/CD pipelines, ensuring efficient, high-quality, and user-friendly software.
                         </p>
                         <div className="flex space-x-4">
                             <Link
@@ -77,9 +77,13 @@ const Homepage = () => {
                             <p className="text-lg text-[#323433] max-w-md mb-6">
                                 I’m fueled by coffee, inspired by books, and passionate about tech. Nature recharges me, and music is my therapy. From coding and gadgets to hiking and reading, I embrace creativity and growth in all forms, making every day an adventure.
                             </p>
-                            <button className="px-10 py-2.5 bg-[#BB5A5A] text-white rounded-[7px] hover:bg-[#9e4c4c] transition duration-300">
+                            <Link
+                                href="https://calendly.com/ambreeny007"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="flex justify-center items-center bg-[#BB5A5A] w-[150px] text-center hover:bg-[#9e4c4c] transition duration-300 text-white px-6 py-2.5 rounded-[7px]">
                                 Hire Me
-                            </button>
+                            </Link>
                         </div>
 
                         {/* Right Side: 6 Cards */}
@@ -285,7 +289,7 @@ const Homepage = () => {
                                 Why <span className="text-[#BB5A5A]">Hire me</span>?
                             </h2>
                             <p className="mt-12 text-lg  text-[#323433] max-w-[500px] leading-8 md:mt-10 text-center md:text-left">
-                                With 9+ years in Automation QA and Full Stack Development, I deliver scalable solutions, optimize testing, and implement CI/CD pipelines. Proficient in Selenium, Appium, Jenkins, and languages like Python, Java, and JavaScript, I ensure high-quality, user-friendly software through efficient testing, attention to detail, and cross-functional collaboration.                            </p>
+                                With 8+ years in Automation QA and Full Stack Development, I deliver scalable solutions, optimize testing, and implement CI/CD pipelines. Proficient in Selenium, Appium, Jenkins, and languages like Python, Java, and JavaScript, I ensure high-quality, user-friendly software through efficient testing, attention to detail, and cross-functional collaboration.                            </p>
 
                             <div className="flex flex-wrap gap-2.5 items-start mt-12 w-full md:mt-10">
                                 <div className="flex flex-col flex-1 shrink basis-0  items-center md:items-start">
@@ -324,7 +328,7 @@ const Homepage = () => {
                                             alt='Calender'
                                             className="object-contain w-10 "
                                         />
-                                        <div className="self-stretch my-auto">9+</div>
+                                        <div className="self-stretch my-auto">8+</div>
                                     </div>
                                     <div className="mt-2.5 text-md md:text-lg text-center text-[#667085]">
                                         Years Experience
