@@ -12,6 +12,7 @@ const Navigation = () => {
   const closeSidebar = () => {
     setIsSidebarOpen(false);
   };
+  
 
   return (
     <>
@@ -45,11 +46,12 @@ const Navigation = () => {
         <div className="hidden lg:flex flex-wrap gap-5 items-center self-stretch my-auto min-w-[240px] max-md:max-w-full">
           <div className="flex gap-4 items-center self-stretch my-auto text-xl tracking-tight text-white min-w-[240px] max-md:max-w-full">
             <ScrollLink
-              to="services" // This should match the id of your tools section
-              spy={true}
-              smooth={true}
-              offset={-50}
-              duration={500}
+            to="services"
+            spy={true}
+            smooth={true}
+            offset={-50}
+            duration={500}
+            hashSpy={true}
             >
               <div className="overflow-hidden gap-2.5 cursor-pointer self-stretch px-1 xl:px-10  py-5 my-auto rounded-[60px] max-md:px-5">
                Services

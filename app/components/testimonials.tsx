@@ -77,8 +77,6 @@ const Testimonials = () => {
                                     </div>
 
                                 </div>
-
-
                                 <div className="flex flex-col px-6 mt-6 text-black leading-6 max-md:px-5">
                                     <h2 className="text-2xl font-semibold mb-4">
                                         {exp.heading}

@@ -25,6 +25,9 @@ html {
   --foreground: #171717;
 }
 
+html, body {
+  scroll-behavior: auto !important;
+}
 
 
 @media (prefers-color-scheme: dark) {
