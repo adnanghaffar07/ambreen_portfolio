@@ -22,7 +22,7 @@ const Homepage = () => {
                         <h1 className="text-3xl md:text-5xl font-extrabold text-[#171717]">Lead Automation</h1>
                         <h1 className="text-4xl md:text-5xl font-extrabold text-[#171717] ml-5 md:ml-10">Software <span className="text-[#BB5A5A]">QA</span> Engineer</h1>
                         <p className="text-lg text-[#171717] max-w-xl text-justify">
-                            With 8+ years in Automation QA and Full Stack Development, I deliver scalable solutions, optimize testing, enhance code quality, and implement CI/CD pipelines, ensuring efficient, high-quality, and user-friendly software.
+                            With 8+ years in Automation QA and Full Stack Development, I deliver scalable solutions, optimize testing, enhance code quality, and implement CI/CD pipelines, ensuring efficient, high-quality and user-friendly software.
                         </p>
                         <div className="flex space-x-4">
                             <Link
