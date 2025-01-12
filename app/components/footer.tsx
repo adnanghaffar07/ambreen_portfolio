@@ -79,7 +79,7 @@ export default function Footer() {
                         </a>
 
                         <a
-                            href="https://mail.google.com/mail/?view=cm&fs=1&to=ambreeny007@gmail.com"
+                            href="https://mail.google.com/mail/?view=cm&fs=1&to=ambreen@ambreeny.com"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
@@ -143,8 +143,8 @@ export default function Footer() {
                     <div className="text-xl font-semibold tracking-tight text-[#BB5A5A]">
                         Contact
                     </div>
-                    <div className="flex flex-col mt-7 text-base tracking-tight text-gray-50">
-                        <div className="flex items-center gap-3 cursor-pointer">
+                    <div className="flex flex-col mt-1 text-base tracking-tight text-gray-50">
+                        {/* <div className="flex items-center gap-3 cursor-pointer">
                             <a
                                 href="tel:+16133166042" // Telephone link format
                                 target="_blank"
@@ -160,7 +160,7 @@ export default function Footer() {
                                   <p>+1 (613) 3166042</p>
                             </a>
                           
-                        </div>
+                        </div> */}
                         <div className="flex items-center gap-3 mt-5 cursor-pointer">
                             <a
                                 href="https://www.ambreeny.com/" // Email link format
@@ -179,7 +179,7 @@ export default function Footer() {
                             </a>
                          
                         </div>
-                        <div className="flex items-center gap-3 mt-5 cursor-pointer">
+                        {/* <div className="flex items-center gap-3 mt-5 cursor-pointer">
                             <a
                                 href="mailto:ambreeny007@gmail.com" // Email link format
                                 target="_blank"
@@ -195,7 +195,7 @@ export default function Footer() {
                                 />
                             <p>ambreeny007@gmail.com</p>
                             </a>
-                        </div>
+                        </div> */}
                     </div>
 
                 </div>
