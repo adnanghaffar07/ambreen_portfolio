@@ -272,7 +272,7 @@ const Homepage = () => {
                 </section>
 
                 {/* Why HIRE ME */}
-                <div id='hire' className="flex overflow-hidden flex-col justify-center items-center py-14 pr-16 w-full bg-[#EACEB4] bg-opacity-10 min-h-[703px] max-md:px-5 max-md:max-w-full">
+                <div id='hire' className="flex overflow-hidden flex-col justify-center px-6 items-center py-14 pr-16 w-full bg-[#EACEB4] bg-opacity-10 min-h-[703px] max-md:px-5 max-md:max-w-full">
                     <div className="flex flex-col md:flex-row relative justify-between items-start max-w-full min-h-[600px] w-full md:w-[1299px]">
 
                         {/* Left side - Image */}

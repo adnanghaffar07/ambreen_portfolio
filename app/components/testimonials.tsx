@@ -138,7 +138,7 @@ const Testimonials = () => {
                 <button
                     onClick={handlePrev}
                     disabled={currentIndex === 0}
-                    className={`hidden md:block absolute left-[-32px] xl:left-[-70px] top-1/2 transform -translate-y-1/2 z-50 rounded-full w-12 h-12 flex items-center justify-center transition-opacity ${currentIndex === 0
+                    className={`hidden md:block absolute left-[-32px] 2xl:left-[-70px] top-1/2 transform -translate-y-1/2 z-50 rounded-full w-12 h-12 flex items-center justify-center transition-opacity ${currentIndex === 0
                         ? 'bg-[#BB5A5A] opacity-50 cursor-not-allowed'
                         : 'bg-[#BB5A5A] opacity-100 hover:opacity-80'
                         }`}
@@ -150,7 +150,7 @@ const Testimonials = () => {
                 <button
                     onClick={handleNext}
                     disabled={currentIndex + itemsPerPage >= experiences.length}
-                    className={`hidden md:block absolute right-[-32px] xl:right-[-70px] top-1/2 transform -translate-y-1/2 z-50 rounded-full w-12 h-12 flex items-center justify-center transition-opacity ${currentIndex + itemsPerPage >= experiences.length
+                    className={`hidden md:block absolute right-[-32px] 2xl:right-[-70px] top-1/2 transform -translate-y-1/2 z-50 rounded-full w-12 h-12 flex items-center justify-center transition-opacity ${currentIndex + itemsPerPage >= experiences.length
                         ? 'bg-[#BB5A5A] opacity-50 cursor-not-allowed'
                         : 'bg-[#BB5A5A] opacity-100 hover:opacity-80'
                         }`}

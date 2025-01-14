@@ -129,7 +129,7 @@ const Navigation = () => {
           onClick={closeSidebar}
         >
           <div
-            className="fixed right-0 top-0 h-full bg-neutral-900 text-white w-64 p-8 z-50"
+            className="fixed right-0 top-0 h-full bg-neutral-900 text-white w-64 p-6 z-50"
             onClick={(e) => e.stopPropagation()} // Prevent closing sidebar when clicking inside it
           >
             <button onClick={closeSidebar} className="text-2xl font-bold mb-8">
