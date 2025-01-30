@@ -148,7 +148,7 @@ const RecentProjects = () => {
     return (
         <div id='experience' className="flex overflow-hidden flex-col items-center p-16 w-full bg-gray-100 max-md:px-5 max-md:max-w-full">
             <div className="flex flex-col items-center w-full max-w-[1312px] max-md:max-w-full">
-                <div className="text-6xl font-semibold tracking-tighter leading-none max-md:max-w-full max-md:text-4xl">
+                <div className="text-3xl md:text-5xl font-semibold tracking-tighter leading-none max-md:max-w-full">
                     <span className="font-medium">My </span>
                     <span className="font-semibold text-[#BB5A5A]">Professional Experience</span>
                 </div>

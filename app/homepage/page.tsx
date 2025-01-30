@@ -81,7 +81,7 @@ const Homepage = () => {
                                 href="https://calendly.com/ambreeny007"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="flex justify-center items-center bg-[#BB5A5A] w-[150px] text-center hover:bg-[#9e4c4c] transition duration-300 text-white px-6 py-2.5 rounded-[7px]">
+                                className="flex justify-center items-center bg-[#BB5A5A] lg:w-[150px] text-center hover:bg-[#9e4c4c] transition duration-300 text-white px-6 py-2.5 rounded-[7px]">
                                 Hire Me
                             </Link>
                         </div>
@@ -232,7 +232,7 @@ const Homepage = () => {
                 {/* Skills section */}
                 <section className="relative py-6 md:py-16 px-6">
                     {/* Heading */}
-                    <h2 className="text-center text-4xl md:text-5xl font-semibold text-black mb-8 md:-mb-4">
+                    <h2 className="text-center text-3xl md:text-5xl font-semibold text-black mb-8 md:-mb-4">
                         My <span className='text-[#BB5A5A]'>Skills</span>
                     </h2>
                     {/* Background image container */}
@@ -271,7 +271,7 @@ const Homepage = () => {
                 </section>
 
                 {/* Why HIRE ME */}
-                <div id='hire' className="flex overflow-hidden flex-col justify-center px-6 items-center lg:py-0 pr-16 w-full bg-[#EACEB4] bg-opacity-10 min-h-[703px] max-md:max-w-full">
+                <div id='hire' className="flex overflow-hidden flex-col justify-center px-6 items-center py-6 lg:py-0 lg:pr-16 w-full bg-[#EACEB4] bg-opacity-10 min-h-[703px] max-md:max-w-full">
                     <div className="flex flex-col md:flex-row relative justify-between md:items-start max-w-full min-h-[600px] w-full md:w-[1299px]">
 
                         {/* Left side - Image */}
@@ -287,7 +287,7 @@ const Homepage = () => {
                             <h2 className="w-full text-3xl font-semibold leading-7 text-[#171717] max-w-full md:text-5xl text-center md:text-left">
                                 Why <span className="text-[#BB5A5A]">Hire me</span>?
                             </h2>
-                            <p className="mt-12 text-lg  text-[#323433] max-w-[500px] leading-8 md:mt-10 text-center md:text-left">
+                            <p className="mt-12 text-lg  text-[#323433] md:max-w-[500px] leading-8 md:mt-10 text-center md:text-left">
                                 With 8+ years in Automation QA and Full Stack Development, I deliver scalable solutions, optimize testing, and implement CI/CD pipelines. Proficient in Selenium, Appium, Jenkins, and languages like Python, Java, and JavaScript, I ensure high-quality, user-friendly software through efficient testing, attention to detail, and cross-functional collaboration.                            </p>
 
                             <div className="flex flex-wrap gap-2.5 items-start mt-12 w-full md:mt-10">

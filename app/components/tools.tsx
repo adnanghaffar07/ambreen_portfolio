@@ -118,7 +118,7 @@ const ToolsAndTechnologies = () => {
     return (
         <div className="flex overflow-hidden flex-col items-center p-16 w-full max-md:px-5 max-md:max-w-full" id="tools-section">
             <div className="flex flex-col items-center w-full max-w-[1312px] max-md:max-w-full">
-                <div className="text-6xl font-semibold tracking-tighter leading-none text-[#BB5A5A] max-md:max-w-full max-md:text-4xl">
+                <div className="text-3xl md:text-5xl font-semibold tracking-tighter leading-none text-[#BB5A5A] max-md:max-w-full">
                     Tools<span className="text-[#171717]"> & </span>Technologies
                 </div>
 
