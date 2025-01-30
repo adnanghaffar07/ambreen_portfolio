@@ -14,7 +14,7 @@ const Homepage = () => {
         <div className="flex flex-col">
             <div className="flex flex-col w-full max-md:max-w-full">
                 {/* HERO SECTION */}
-                <div id="home" className="font-poppins flex flex-col md:flex-row max-w-8xl py-6 px-6 md:px-8 md:py-8 gap-6 xl:gap-32 justify-between mx-auto md:pb-10">
+                <div id="home" className="font-poppins flex flex-col lg:flex-row max-w-7xl py-6 px-6 md:px-8 md:py-8 gap-8 justify-between mx-auto md:pb-10">
                     {/* Text Area */}
                     <div className="flex flex-col justify-center items-start w-full lg:w-2/3 space-y-6">
                         <h1 className="text-xl font-bold text-[#171717]">Hi I am</h1>
@@ -41,11 +41,11 @@ const Homepage = () => {
                     </div>
 
                     {/* Image Area */}
-                    <div className="flex justify-center items-center w-full md:w-1/3">
+                    <div className="flex justify-center items-center w-full md:w-2/3">
                         <img
                             src="/ambreen.png"
                             alt="Ambreen's Image"
-                            className="w-full h-auto mb-6 max-w-sm md:max-w-full object-cover rounded-lg"
+                            className="w-full h-auto mb-6 max-w-sm md:max-w-full object-cover xl:ml-32"
                         />
                     </div>
                 </div>
@@ -67,7 +67,7 @@ const Homepage = () => {
                 {/* Things I Love Section */}
                 <section className="py-6 md:py-16 px-6 md:px-10 max-w-7xl mx-auto">
                     {/* Container for Left and Right content */}
-                    <div className="flex flex-col md:grid md:grid-cols-2 items-center justify-between gap-12">
+                    <div className="flex flex-col md:grid lg:grid-cols-2 items-center justify-between gap-12">
 
                         {/* Left Side: Heading, Description, and Button */}
                         <div className="w-full md:w-full text-center md:text-left md:mr-10">
@@ -140,7 +140,6 @@ const Homepage = () => {
 
                     </div>
                 </section>
-
 
                 {/* Testimonials Section */}
                 <section className="py-6 md:py-16 px-6 md:px-10 max-w-7xl mx-auto">
@@ -272,15 +271,15 @@ const Homepage = () => {
                 </section>
 
                 {/* Why HIRE ME */}
-                <div id='hire' className="flex overflow-hidden flex-col justify-center px-6 items-center py-14 pr-16 w-full bg-[#EACEB4] bg-opacity-10 min-h-[703px] max-md:px-5 max-md:max-w-full">
-                    <div className="flex flex-col md:flex-row relative justify-between items-start max-w-full min-h-[600px] w-full md:w-[1299px]">
+                <div id='hire' className="flex overflow-hidden flex-col justify-center px-6 items-center lg:py-0 pr-16 w-full bg-[#EACEB4] bg-opacity-10 min-h-[703px] max-md:max-w-full">
+                    <div className="flex flex-col md:flex-row relative justify-between md:items-start max-w-full min-h-[600px] w-full md:w-[1299px]">
 
                         {/* Left side - Image */}
                         <img
                             loading="lazy"
                             src="/ambreen-hire.png"
                             alt='hire me'
-                            className="object-contain self-start mb-10 md:mb-0 max-w-full"
+                            className="object-contain md:self-start mb-10 md:mb-0 xl:px-[110px] h-[350px] lg:h-[550px]"
                         />
 
                         {/* Right side - Content */}

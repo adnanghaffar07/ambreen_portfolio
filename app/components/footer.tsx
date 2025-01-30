@@ -77,7 +77,7 @@ export default function Footer() {
 
             </div>
             <div className="flex flex-col md:flex-row" >
-            <div className="flex md:hidden flex gap-4 items-start mt-10 mb-2">
+                <div className="flex md:hidden flex gap-4 items-start mt-10 mb-2">
                     <a
                         href="https://wa.me/+16133166042" // WhatsApp link format
                         target="_blank" // Opens in a new tab
