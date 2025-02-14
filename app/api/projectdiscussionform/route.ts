@@ -11,7 +11,7 @@ export async function POST(request: Request) {
       secure: true, // true for 465, false for other ports
       auth: {
         user: "adnan@codeautomation.dev", // Gmail email address
-        pass: "hmwk rlwe ylfv jakg", // Gmail app password
+        pass: "hueq dwkd zknz apuq", // Gmail app password
       },
     });
 
