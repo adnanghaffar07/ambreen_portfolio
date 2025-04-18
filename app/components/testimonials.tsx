@@ -59,7 +59,7 @@ const Testimonials = () => {
             className="relative flex flex-col items-center md:pr-16 md:pl-16 w-full bg-center  py-10 md:py-16 max-md:max-w-full"
         >
             <div className="max-w-full text-3xl md:text-5xl text-center md:leading-50px text-black max-w-lg">
-                <span className="font-bold text-black">Key <span className="text-[#BB5A5A]">Achievements</span></span>
+                <span className="font-bold text-black dark:text-white">Key <span className="text-[#BB5A5A]">Achievements</span></span>
             </div>
             <div className="relative w-full max-w-6xl mx-auto mt-16 ">
                 {/* Desktop layout */}
@@ -69,13 +69,12 @@ const Testimonials = () => {
                         .map((exp, index) => (
                             <div
                                 key={index}
-                                className="flex flex-col self-stretch py-7  border-b-4 border-[#BB5A5A] h-full my-auto rounded-xl backdrop-blur-[7.5px] bg-[#EACEB4] bg-opacity-30 md:min-w-[204px] w-full transition-all duration-500 ease-in-out"
+                                className="flex flex-col self-stretch py-7 border-b-4 border-[#BB5A5A] h-full my-auto rounded-xl backdrop-blur-[7.5px] bg-[#EACEB4] bg-opacity-30 dark:bg-opacity-90  md:min-w-[204px] w-full transition-all duration-500 ease-in-out"
                             >
                                 <div className="flex flex-row">
                                     <div className="self-start ml-6 px-5 py-2.5 bg-white shadow-xl rounded-lg text-3xl text-[#BB5A5A] font-bold max-md:ml-2.5">
                                         {exp.timeframe}
                                     </div>
-
                                 </div>
                                 <div className="flex flex-col px-6 mt-6 text-black leading-6 max-md:px-5">
                                     <h2 className="text-2xl font-semibold mb-4">
@@ -84,9 +83,7 @@ const Testimonials = () => {
                                     <p className="text- font-light">
                                         {exp.description}
                                     </p>
-
                                 </div>
-
                             </div>
                         ))}
                 </div>

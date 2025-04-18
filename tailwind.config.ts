@@ -1,6 +1,7 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
+  darkMode: 'media', // or 'class' if you want manual toggling
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -14,11 +15,11 @@ const config: Config = {
       },
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],     
-       lufga: ['Lufga', 'sans-serif'],  // Add Lufga font
-
+        lufga: ['Lufga', 'sans-serif'],
       },
     },
   },
   plugins: [],
 };
+
 export default config;

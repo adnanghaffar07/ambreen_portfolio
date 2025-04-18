@@ -25,8 +25,8 @@ const InfoSection = () => {
     ];
 
     return (
-        <section id="services" className="px-8 py-20 bg-white max-w-6xl mx-auto">
-            <h2 className="text-3xl md:text-5xl font-bold text-center mb-8 md:mb-16 text-[#171717]">My <span className="text-[#BB5A5A]">Services</span></h2>
+        <section id="services" className="px-8 py-20 max-w-6xl mx-auto">
+            <h2 className="text-3xl md:text-5xl font-bold text-center mb-8 md:mb-16 text-[#171717] dark:text-white">My <span className="text-[#BB5A5A]">Services</span></h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 {boxes.map((box, index) => (
                     <div

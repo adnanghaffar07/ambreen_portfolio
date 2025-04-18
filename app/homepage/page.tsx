@@ -17,13 +17,17 @@ const Homepage = () => {
                 <div id="home" className="font-poppins flex flex-col lg:flex-row max-w-7xl py-6 px-6 md:px-8 md:py-8 gap-8 justify-between mx-auto md:pb-10">
                     {/* Text Area */}
                     <div className="flex flex-col justify-center items-start w-full lg:w-2/3 space-y-6">
-                        <h1 className="text-xl font-bold text-[#171717]">Hi I am</h1>
+                        <h1 className="text-xl font-bold text-[#171717] dark:text-white">Hi I am</h1>
                         <h1 className="text-3xl font-bold text-[#BB5A5A]">Ambreen</h1>
-                        <h1 className="text-3xl md:text-5xl font-extrabold text-[#171717]">Lead Automation</h1>
-                        <h1 className="text-4xl md:text-5xl font-extrabold text-[#171717] ml-5 md:ml-10">Software <span className="text-[#BB5A5A]">QA</span> Engineer</h1>
-                        <p className="text-lg text-[#171717] max-w-xl text-justify">
-                            With 8+ years in Automation QA and Full Stack Development, I deliver scalable solutions, optimize testing, enhance code quality, and implement CI/CD pipelines, ensuring efficient, high-quality and user-friendly software.
+                        <h1 className="text-3xl md:text-5xl font-extrabold text-[#171717] dark:text-white">Lead Automation</h1>
+                        <h1 className="text-4xl md:text-5xl font-extrabold text-[#171717] dark:text-white ml-5 md:ml-10">
+                            Software <span className="text-[#BB5A5A]">QA</span> Engineer
+                        </h1>
+                        <p className="text-lg text-[#171717] dark:text-white max-w-xl text-justify">
+                            With 8+ years in Automation QA and Full Stack Development, I deliver scalable solutions, optimize testing,
+                            enhance code quality, and implement CI/CD pipelines, ensuring efficient, high-quality and user-friendly software.
                         </p>
+
                         <div className="flex space-x-4">
                             <Link
                                 href="https://calendly.com/ambreeny007"
@@ -33,7 +37,7 @@ const Homepage = () => {
                                 Hire Me
                             </Link>
                             <a href="/Ambreen Younas Lead Automation Software Quality Assurance Engineer.pdf" download>
-                                <div className="bg-transparent border-2 border-[#BB5A5A] hover:bg-[#BB5A5A] hover:bg-opacity-15 transition duration-300 text-[#BB5A5A] w-[150px] text-center py-2.5 rounded-[7px] transition duration-200">
+                                <div className="bg-transparent border-2 border-[#BB5A5A] hover:bg-[#BB5A5A] hover:bg-opacity-15 transition duration-300 text-[#BB5A5A] w-[150px] text-center py-2.5 rounded-[7px]">
                                     Download CV
                                 </div>
                             </a>
@@ -49,6 +53,7 @@ const Homepage = () => {
                         />
                     </div>
                 </div>
+
 
                 {/* Tools Logo SEction */}
                 <ToolLogosSection />
@@ -71,10 +76,10 @@ const Homepage = () => {
 
                         {/* Left Side: Heading, Description, and Button */}
                         <div className="w-full md:w-full text-center md:text-left md:mr-10">
-                            <h2 style={{ lineHeight: "60px" }} className="text-3xl md:text-5xl max-w-sm font-semibold text-black mb-4">
+                            <h2 style={{ lineHeight: "60px" }} className="text-3xl md:text-5xl max-w-sm dark:text-white font-semibold text-black mb-4">
                                 <span className='text-[#BB5A5A]'>Things</span> I Love Doing
                             </h2>
-                            <p className="text-lg text-[#323433] max-w-md mb-6">
+                            <p className="text-lg text-[#323433] dark:text-white max-w-md mb-6">
                                 I’m fueled by coffee, inspired by books, and passionate about tech. Nature recharges me, and music is my therapy. From coding and gadgets to hiking and reading, I embrace creativity and growth in all forms, making every day an adventure.
                             </p>
                             <Link
@@ -144,7 +149,7 @@ const Homepage = () => {
                 {/* Testimonials Section */}
                 <section className="py-6 md:py-16 px-6 md:px-10 max-w-7xl mx-auto">
                     {/* Heading */}
-                    <h2 className="text-center text-3xl md:text-5xl font-bold text-black mb-12">
+                    <h2 className="text-center text-3xl md:text-5xl dark:text-white font-bold text-black mb-12">
                         Testimonials
                     </h2>
 
@@ -232,7 +237,7 @@ const Homepage = () => {
                 {/* Skills section */}
                 <section className="relative py-6 md:py-16 px-6">
                     {/* Heading */}
-                    <h2 className="text-center text-3xl md:text-5xl font-semibold text-black mb-8 md:-mb-4">
+                    <h2 className="text-center text-3xl md:text-5xl font-semibold dark:text-white text-black mb-8 md:-mb-4">
                         My <span className='text-[#BB5A5A]'>Skills</span>
                     </h2>
                     {/* Background image container */}
@@ -271,7 +276,7 @@ const Homepage = () => {
                 </section>
 
                 {/* Why HIRE ME */}
-                <div id='hire' className="flex overflow-hidden flex-col justify-center px-6 items-center py-6 lg:py-0 lg:pr-16 w-full bg-[#EACEB4] bg-opacity-10 min-h-[703px] max-md:max-w-full">
+                <div id='hire' className="flex overflow-hidden flex-col justify-center px-6 items-center py-6 lg:py-0 lg:pr-16 w-full bg-[#EACEB4] bg-opacity-10 dark:bg-opacity-40 min-h-[703px] max-md:max-w-full">
                     <div className="flex flex-col md:flex-row relative justify-between md:items-start max-w-full min-h-[600px] w-full md:w-[1299px]">
 
                         {/* Left side - Image */}
@@ -284,10 +289,10 @@ const Homepage = () => {
 
                         {/* Right side - Content */}
                         <div className="flex flex-col flex-1 shrink my-auto md:ml-16 basis-0 min-w-[240px] max-w-full">
-                            <h2 className="w-full text-3xl font-semibold leading-7 text-[#171717] max-w-full md:text-5xl text-center md:text-left">
+                            <h2 className="w-full text-3xl font-semibold leading-7 dark:text-white text-[#171717] max-w-full md:text-5xl text-center md:text-left">
                                 Why <span className="text-[#BB5A5A]">Hire me</span>?
                             </h2>
-                            <p className="mt-12 text-lg  text-[#323433] md:max-w-[500px] leading-8 md:mt-10 text-center md:text-left">
+                            <p className="mt-12 text-lg  text-[#323433] dark:text-white md:max-w-[500px] leading-8 md:mt-10 text-center md:text-left">
                                 With 8+ years in Automation QA and Full Stack Development, I deliver scalable solutions, optimize testing, and implement CI/CD pipelines. Proficient in Selenium, Appium, Jenkins, and languages like Python, Java, and JavaScript, I ensure high-quality, user-friendly software through efficient testing, attention to detail, and cross-functional collaboration.                            </p>
 
                             <div className="flex flex-wrap gap-2.5 items-start mt-12 w-full md:mt-10">
@@ -301,7 +306,7 @@ const Homepage = () => {
                                         />
                                         <div>150+</div>
                                     </div>
-                                    <div className="mt-2.5 text-md md:text-lg text-center text-[#667085]">
+                                    <div className="mt-2.5 text-md md:text-lg text-center dark:text-white text-[#667085]">
                                         Projects Completed
                                     </div>
                                 </div>
@@ -315,7 +320,7 @@ const Homepage = () => {
                                         />
                                         <div className="self-stretch my-auto">4.9</div>
                                     </div>
-                                    <div className="mt-2.5 text-md md:text-lg text-center text-[#667085]">
+                                    <div className="mt-2.5 text-md md:text-lg text-center  dark:text-white text-[#667085]">
                                         Client Satisfaction
                                     </div>
                                 </div>
@@ -329,7 +334,7 @@ const Homepage = () => {
                                         />
                                         <div className="self-stretch my-auto">8+</div>
                                     </div>
-                                    <div className="mt-2.5 text-md md:text-lg text-center text-[#667085]">
+                                    <div className="mt-2.5 text-md md:text-lg text-center dark:text-white text-[#667085]">
                                         Years Experience
                                     </div>
                                 </div>

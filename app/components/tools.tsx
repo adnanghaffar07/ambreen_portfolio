@@ -119,14 +119,14 @@ const ToolsAndTechnologies = () => {
         <div className="flex overflow-hidden flex-col items-center p-16 w-full max-md:px-5 max-md:max-w-full" id="tools-section">
             <div className="flex flex-col items-center w-full max-w-[1312px] max-md:max-w-full">
                 <div className="text-3xl md:text-5xl font-semibold tracking-tighter leading-none text-[#BB5A5A] max-md:max-w-full">
-                    Tools<span className="text-[#171717]"> & </span>Technologies
+                    Tools<span className="text-[#171717] dark:text-white"> & </span>Technologies
                 </div>
 
 
                 {/* Category Tabs - Two Rows */}
                 <div className="flex flex-col gap-4 mt-8">
                     {/* First Row */}
-                    <div className="flex bg-[#BB5A5A] bg-opacity-10 overflow-hidden text-[#171717] flex-wrap gap-1.5 justify-center items-center px-1.5 py-2 text-xl min-h-[67px] rounded-[10px] max-md:max-w-full">
+                    <div className="flex bg-[#BB5A5A] bg-opacity-10 dark:bg-opacity-60 overflow-hidden text-[#171717] flex-wrap gap-1.5 justify-center items-center px-1.5 py-2 text-xl min-h-[67px] rounded-[10px] max-md:max-w-full">
                         {firstHalfCategories.map((category, index) => (
                             <div
                                 key={index}
@@ -142,7 +142,7 @@ const ToolsAndTechnologies = () => {
                     </div>
 
                     {/* Second Row */}
-                    <div className="flex bg-[#BB5A5A] bg-opacity-10 overflow-hidden text-[#171717] flex-wrap gap-1.5 justify-center items-center px-1.5 py-2 text-xl min-h-[67px] rounded-[10px] w-auto mx-auto">
+                    <div className="flex bg-[#BB5A5A] bg-opacity-10 dark:bg-opacity-60 overflow-hidden text-[#171717] flex-wrap gap-1.5 justify-center items-center px-1.5 py-2 text-xl min-h-[67px] rounded-[10px] w-auto mx-auto">
                         {secondHalfCategories.map((category, index) => (
                             <div
                                 key={index}
@@ -173,7 +173,7 @@ const ToolsAndTechnologies = () => {
                                 className="object-contain rounded-xl items-center justify-center aspect-square w-[88px]"
                                 alt={tool.name}
                             />
-                            <div className="mt-2.5 text-sm leading-7 max-w-[100px] whitespace-nowrap">{tool.name}</div>
+                            <div className="mt-2.5 text-sm leading-7 max-w-[100px] whitespace-nowrap dark:text-white">{tool.name}</div>
                         </div>
                     ))}
                 </div>

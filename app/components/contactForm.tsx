@@ -68,7 +68,7 @@ export default function ProjectDiscussionContainer() {
       className="flex overflow-hidden flex-wrap gap-10 items-center justify-center mx-auto md:px-16 py-8 md:py-16 w-full px-6 max-w-7xl"
     >
       <div className="flex flex-col grow shrink self-stretch my-auto max-md:max-w-full">
-        <h2 style={{lineHeight: "60px"}} className="text-3xl md:text-5xl font-semibold leading-[50px] text-black max-w-[450px] 2xl:max-w-[650px] ">
+        <h2 style={{lineHeight: "60px"}} className="text-3xl md:text-5xl font-semibold leading-[50px] dark:text-white   text-black max-w-[450px] 2xl:max-w-[650px] ">
           <span className="">Have an Awesome Project Idea? </span>
           <span className="tracking-tighter text-[#BB5A5A]">Let’s Discuss</span>
         </h2>
