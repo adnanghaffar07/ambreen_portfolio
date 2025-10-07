@@ -1,6 +1,6 @@
 "use client";
+import Link from "next/link";
 import React, { useState } from "react";
-import { Link as ScrollLink } from "react-scroll"; // Import react-scroll
 
 const Navigation = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -12,7 +12,7 @@ const Navigation = () => {
   const closeSidebar = () => {
     setIsSidebarOpen(false);
   };
-  
+
 
   return (
     <>
@@ -21,96 +21,55 @@ const Navigation = () => {
 
         {/* Mobile Logo on the Left */}
         <div className="lg:hidden flex items-center ml-3">
-          <ScrollLink
-            to="home" // This should match the id of your tools section
-            spy={true}
-            smooth={true}
-            offset={-50}
-            duration={500}
-          >
-            <div className="flex overflow-hidden gap-2.5 justify-center items-center ">
-
+          <Link href="/#home" scroll={true}>
+            <div className="flex overflow-hidden gap-2.5 justify-center items-center">
               <img
                 loading="lazy"
                 src="/amb-nav.png"
                 className="object-contain h-10"
                 alt="Logo"
               />
-             
-
             </div>
-          </ScrollLink>
+          </Link>
         </div>
 
         {/* Desktop Menu (hidden on mobile) */}
         <div className="hidden lg:flex flex-wrap gap-5 items-center self-stretch my-auto min-w-[240px] max-md:max-w-full">
           <div className="flex gap-4 items-center self-stretch my-auto text-xl tracking-tight text-white min-w-[240px] max-md:max-w-full">
-            <ScrollLink
-            to="services"
-            spy={true}
-            smooth={true}
-            offset={-50}
-            duration={500}
-            hashSpy={true}
-            >
-              <div className="overflow-hidden gap-2.5 cursor-pointer self-stretch px-1 xl:px-10  py-5 my-auto rounded-[60px] max-md:px-5">
-               Services
+            <Link href="/#services" scroll={true}>
+              <div className="overflow-hidden gap-2.5 cursor-pointer self-stretch px-1 xl:px-10   py-5 my-auto rounded-[60px] max-md:px-5">
+                Services
               </div>
-            </ScrollLink>
+            </Link>
 
-            <ScrollLink
-              to="experience" // This should match the id of your tools section
-              spy={true}
-              smooth={true}
-              offset={-50}
-              duration={500}
-            >
+            <Link href="/#experience" scroll={true}>
               <div className="overflow-hidden gap-2.5 cursor-pointer self-stretch px-1 xl:px-10   py-5 my-auto rounded-[60px] max-md:px-5">
                 Professional Experience
               </div>
-            </ScrollLink>
+            </Link>
+
           </div>
-          <ScrollLink
-            to="home" // This should match the id of your tools section
-            spy={true}
-            smooth={true}
-            offset={-50}
-            duration={500}
-          >
+          <Link href="/#home" scroll={true}>
             <div className="flex overflow-hidden gap-2.5 cursor-pointer justify-center items-center self-stretch lg:py-5 lg:pr-9 lg:pl-9 max-md:px-5">
               <img
                 loading="lazy"
                 src="/amb-nav.png"
-                className="object-contain h-10"
                 alt="Logo"
+                className="object-contain h-10"
               />
-            
-
             </div>
-          </ScrollLink>
+          </Link>
           <div className="flex flex-wrap gap-10 cursor-pointer items-center self-stretch my-auto text-xl tracking-tight text-white max-md:max-w-full">
             <div className="overflow-hidden gap-2.5 self-stretch px-1 xl:px-8  py-5 my-auto max-md:px-5">
-              <ScrollLink
-                to="tools-section" // This should match the id of your tools section
-                spy={true}
-                smooth={true}
-                offset={-50}
-                duration={500}
-              >
+              <Link href="/#tools-section" scroll={true}>
                 Tools & Technologies
-              </ScrollLink>
+              </Link>
             </div>
-            <ScrollLink
-              to="hire" // This should match the id of your tools section
-              spy={true}
-              smooth={true}
-              offset={-50}
-              duration={500}
-            >
-              <div className="overflow-hidden cursor-pointer gap-2.5 self-stretch px-1 xl:px-10  py-5 my-auto rounded-[60px] max-md:px-5">
+            <Link href="/#hire" scroll={true}>
+              <div className="overflow-hidden cursor-pointer gap-2.5 self-stretch px-1 xl:px-10 py-5 my-auto rounded-[60px] max-md:px-5">
                 Why Hire Me
               </div>
-            </ScrollLink>
+            </Link>
           </div>
         </div>
 
@@ -136,55 +95,30 @@ const Navigation = () => {
               ✕
             </button>
             <ul className="space-y-6">
-              <li >
-                <ScrollLink
-                  to="services" // This should match the id of your tools section
-                  spy={true}
-                  smooth={true}
-                  offset={-50}
-                  duration={500}
-                  onClick={closeSidebar}
-                >
-                  Services
-                </ScrollLink></li>
-
-              <li >
-                <ScrollLink
-                  to="experience" // This should match the id of your tools section
-                  spy={true}
-                  smooth={true}
-                  offset={-50}
-                  duration={500}
-                  onClick={closeSidebar}
-                >
-                  Professional Experience
-                </ScrollLink></li>
-
-              {/* ScrollLink for "Tools & Technologies" */}
               <li>
-                <ScrollLink
-                  to="tools-section" // This should match the id of your tools section
-                  spy={true}
-                  smooth={true}
-                  offset={-50}
-                  duration={500}
-                  onClick={closeSidebar} // Close sidebar when clicked
-                >
-                  Tools & Technologies
-                </ScrollLink>
+                <Link href="/#services" onClick={closeSidebar}>
+                  Services
+                </Link>
               </li>
 
-              <li >
-                <ScrollLink
-                  to="hire" // This should match the id of your tools section
-                  spy={true}
-                  smooth={true}
-                  offset={-50}
-                  duration={500}
-                  onClick={closeSidebar}
-                >
+              <li>
+                <Link href="/#experience" onClick={closeSidebar}>
+                  Professional Experience
+                </Link>
+              </li>
+
+              <li>
+                <Link href="/#tools-section" onClick={closeSidebar}>
+                  Tools & Technologies
+                </Link>
+              </li>
+
+              <li>
+                <Link href="/#hire" onClick={closeSidebar}>
                   Why Hire Me
-                </ScrollLink></li>            </ul>
+                </Link>
+              </li>
+            </ul>
           </div>
         </div>
       )}

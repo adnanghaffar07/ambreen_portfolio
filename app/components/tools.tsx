@@ -122,42 +122,60 @@ const ToolsAndTechnologies = () => {
                     Tools<span className="text-[#171717] dark:text-white"> & </span>Technologies
                 </div>
 
-
-                {/* Category Tabs - Two Rows */}
+                {/* Category Tabs */}
                 <div className="flex flex-col gap-4 mt-8">
-                    {/* First Row */}
-                    <div className="flex bg-[#BB5A5A] bg-opacity-10 dark:bg-opacity-60 overflow-hidden text-[#171717] flex-wrap gap-1.5 justify-center items-center px-1.5 py-2 text-xl min-h-[67px] rounded-[10px] max-md:max-w-full">
-                        {firstHalfCategories.map((category, index) => (
+
+                    {/* 🖥️ Desktop View (Two Rows) */}
+                    <div className="hidden md:flex flex-col gap-4">
+
+                        {/* First Row */}
+                        <div className="flex bg-[#BB5A5A] bg-opacity-10 dark:bg-opacity-60 overflow-hidden text-[#171717] flex-wrap gap-1.5 justify-center items-center px-1.5 py-2 text-xl min-h-[67px] rounded-[10px] max-md:max-w-full">
+                            {firstHalfCategories.map((category, index) => (
+                                <div
+                                    key={index}
+                                    onClick={() => setActiveCategoryIndex(index)} // Change active category on click
+                                    className={`cursor-pointer overflow-hidden px-6 py-3.5 my-auto font-medium text-center tracking-tight rounded-[8px] ${activeCategoryIndex === index
+                                        ? 'bg-[#BB5A5A] text-white' // Active tab styles
+                                        : ' text-black'  // Inactive tab styles with black text
+                                        }`}
+                                >
+                                    {category.title}
+                                </div>
+                            ))}
+                        </div>
+
+                        {/* Second Row */}
+                        <div className="flex bg-[#BB5A5A] bg-opacity-10 dark:bg-opacity-60 overflow-hidden text-[#171717] flex-wrap gap-1.5 justify-center items-center px-1.5 py-2 text-xl min-h-[67px] rounded-[10px] w-auto mx-auto">
+                            {secondHalfCategories.map((category, index) => (
+                                <div
+                                    key={index}
+                                    onClick={() => setActiveCategoryIndex(index + midIndex)} // Add midIndex to make it unique for second half
+                                    className={`cursor-pointer overflow-hidden px-6 py-3.5 my-auto text-center font-medium tracking-tight rounded-[8px] ${activeCategoryIndex === index + midIndex
+                                        ? 'bg-[#BB5A5A] text-white' // Active tab styles
+                                        : ' text-black'  // Inactive tab styles with black text
+                                        }`}
+                                >
+                                    {category.title}
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+
+                    {/* 📱 Mobile View (Single Combined Row) */}
+                    <div className="flex md:hidden bg-[#BB5A5A] bg-opacity-10 dark:bg-opacity-60 overflow-hidden text-[#171717] flex-wrap gap-1.5 justify-center items-center px-1.5 py-2 text-lg min-h-[67px] rounded-[10px]">
+                        {[...firstHalfCategories, ...secondHalfCategories].map((category, index) => (
                             <div
                                 key={index}
-                                onClick={() => setActiveCategoryIndex(index)} // Change active category on click
-                                className={`cursor-pointer overflow-hidden px-6 py-3.5 my-auto font-medium tracking-tight rounded-[8px] ${activeCategoryIndex === index
-                                    ? 'bg-[#BB5A5A] text-white' // Active tab styles
-                                    : ' text-black'  // Inactive tab styles with black text
+                                onClick={() => setActiveCategoryIndex(index)}
+                                className={`cursor-pointer overflow-hidden px-5 py-3 my-auto font-medium text-center tracking-tight rounded-[8px] ${activeCategoryIndex === index
+                                        ? 'bg-[#BB5A5A] text-white'
+                                        : 'text-black'
                                     }`}
                             >
                                 {category.title}
                             </div>
                         ))}
                     </div>
-
-                    {/* Second Row */}
-                    <div className="flex bg-[#BB5A5A] bg-opacity-10 dark:bg-opacity-60 overflow-hidden text-[#171717] flex-wrap gap-1.5 justify-center items-center px-1.5 py-2 text-xl min-h-[67px] rounded-[10px] w-auto mx-auto">
-                        {secondHalfCategories.map((category, index) => (
-                            <div
-                                key={index}
-                                onClick={() => setActiveCategoryIndex(index + midIndex)} // Add midIndex to make it unique for second half
-                                className={`cursor-pointer overflow-hidden px-6 py-3.5 my-auto font-medium tracking-tight rounded-[8px] ${activeCategoryIndex === index + midIndex
-                                    ? 'bg-[#BB5A5A] text-white' // Active tab styles
-                                    : ' text-black'  // Inactive tab styles with black text
-                                    }`}
-                            >
-                                {category.title}
-                            </div>
-                        ))}
-                    </div>
-
-
                 </div>
 
             </div>

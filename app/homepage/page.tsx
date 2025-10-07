@@ -8,8 +8,6 @@ import InfoSection from '../components/workExperience';
 import Testimonials from '../components/testimonials';
 
 const Homepage = () => {
-
-
     return (
         <div className="flex flex-col">
             <div className="flex flex-col w-full max-md:max-w-full">
@@ -18,29 +16,23 @@ const Homepage = () => {
                     {/* Text Area */}
                     <div className="flex flex-col justify-center items-start w-full lg:w-2/3 space-y-6">
                         <h1 className="text-xl font-bold text-[#171717] dark:text-white">Hi I am</h1>
-                        <h1 className="text-3xl font-bold text-[#BB5A5A]">Ambreen</h1>
-                        <h1 className="text-3xl md:text-5xl font-extrabold text-[#171717] dark:text-white">Lead Automation</h1>
-                        <h1 className="text-4xl md:text-5xl font-extrabold text-[#171717] dark:text-white ml-5 md:ml-10">
+                        <h2 className="text-3xl font-bold text-[#BB5A5A]">Ambreen</h2>
+                        <h3 className="text-3xl md:text-5xl font-extrabold text-[#171717] dark:text-white">Lead Automation</h3>
+                        <h4 className="text-4xl md:text-5xl font-extrabold text-[#171717] dark:text-white ml-5 md:ml-10">
                             Software <span className="text-[#BB5A5A]">QA</span> Engineer
-                        </h1>
+                        </h4>
                         <p className="text-lg text-[#171717] dark:text-white max-w-xl text-justify">
                             With 8+ years in Automation QA and Full Stack Development, I deliver scalable solutions, optimize testing,
                             enhance code quality, and implement CI/CD pipelines, ensuring efficient, high-quality and user-friendly software.
                         </p>
 
-                        <div className="flex space-x-4">
+                        <div className="flex">
                             <Link
-                                href="https://calendly.com/ambreeny007"
+                                href="/workflow-automation"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="flex justify-center items-center bg-[#BB5A5A] w-[150px] text-center hover:bg-[#9e4c4c] transition duration-300 text-white px-6 py-2.5 rounded-[7px]">
-                                Hire Me
-                            </Link>
-                            <a href="/Ambreen Younas Lead Automation Software Quality Assurance Engineer.pdf" download>
-                                <div className="bg-transparent border-2 border-[#BB5A5A] hover:bg-[#BB5A5A] hover:bg-opacity-15 transition duration-300 text-[#BB5A5A] w-[150px] text-center py-2.5 rounded-[7px]">
-                                    Download CV
-                                </div>
-                            </a>
+                                className="flex justify-center items-center bg-[#BB5A5A] w-fit text-center hover:bg-[#9e4c4c] transition duration-300 text-white px-6 py-2.5 rounded-[7px]">
+                                Explore My Automations                            </Link>
                         </div>
                     </div>
 
@@ -53,7 +45,6 @@ const Homepage = () => {
                         />
                     </div>
                 </div>
-
 
                 {/* Tools Logo SEction */}
                 <ToolLogosSection />

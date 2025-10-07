@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Navigation from "./components/navigation";
+import Footer from "./components/footer";
 
 // Define the metadata for the page
 export const metadata: Metadata = {
@@ -26,7 +28,10 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/css2?family=Lufga:wght@400;500;600&display=swap" rel="stylesheet"/>
       </head>
       <body>
+       <div className="px-6">
+         <Navigation /></div>
         {children}
+        <Footer/>
       </body>
     </html>
   );

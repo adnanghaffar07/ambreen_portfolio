@@ -1,10 +1,8 @@
 
-import ButtonScrollToSection from "./buttonScroll";
+import Link from "next/link";
 
 export default function Footer() {
     return (
-
-
         <div className="flex overflow-hidden flex-col justify-between px-16 py-6 w-full bg-black min-h-[270px] max-md:px-5 max-md:max-w-full">
             <div className="flex flex-wrap gap-10 justify-between items-start mt-6 w-full max-md:max-w-full">
                 <div className="flex flex-col items-center md:justify-between max-md:max-w-full">
@@ -20,34 +18,37 @@ export default function Footer() {
                             </div>
                         </div>
                     </div>
-
                 </div>
+
                 <div className="flex flex-col">
                     <div className="flex flex-col md:flex-row md:space-x-6 md:mt-7 text-base text-gray-50">
-                        <ButtonScrollToSection
-                            content="Services"
-                            classes="cursor-pointer mt-5"
-                            destination="services"
-                            key="Get-Started-Now-button"
-                        />
-                        <ButtonScrollToSection
-                            content="Professional Experience"
-                            classes=" cursor-pointer mt-5"
-                            destination="experience"
-                            key="Get-Started-Now-button"
-                        />
-                        <ButtonScrollToSection
-                            content="Tools & Technologies"
-                            classes=" cursor-pointer  mt-5"
-                            destination="tools-section"
-                            key="Get-Started-Now-button"
-                        />
-                        <ButtonScrollToSection
-                            content="Why Hire Me"
-                            classes=" cursor-pointer mt-5"
-                            destination="hire"
-                            key="Get-Started-Now-button"
-                        />
+                        <Link
+                            href="/#services"
+                            className="cursor-pointer mt-5"
+                        >
+                            Services
+                        </Link>
+
+                        <Link
+                            href="/#experience"
+                            className="cursor-pointer mt-5"
+                        >
+                            Professional Experience
+                        </Link>
+
+                        <Link
+                            href="/#tools-section"
+                            className="cursor-pointer mt-5"
+                        >
+                            Tools & Technologies
+                        </Link>
+
+                        <Link
+                            href="/#hire"
+                            className="cursor-pointer mt-5"
+                        >
+                            Why Hire Me
+                        </Link>
                     </div>
                 </div>
 
@@ -135,7 +136,7 @@ export default function Footer() {
                 <div className="mt-6 mb-3 2xl:-mr-[150px] w-full text-center font-light text-sm text-white max-md:max-w-full">
                     Copyright© 2025 Ambreeny. All Rights Reserved.
                 </div>
-                <div className="hidden md:flex flex gap-4 items-start mt-4 mb-2">
+                {/* <div className="hidden md:flex flex gap-4 items-start mt-4 mb-2">
                     <a
                         href="https://wa.me/+16133166042" // WhatsApp link format
                         target="_blank" // Opens in a new tab
@@ -189,7 +190,7 @@ export default function Footer() {
                         />
                     </a>
 
-                </div>
+                </div> */}
             </div>
 
         </div>)
